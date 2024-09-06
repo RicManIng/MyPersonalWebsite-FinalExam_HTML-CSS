@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
     <head>
-        <title></title>
+        <title>Ingegnere Riccardo Mancinelli</title>
+        <link rel="stylesheet" href="resources/css/index.css">
     </head>
     <body>
         <header>
@@ -21,11 +22,14 @@
             </div>
             <div>
                 <!-- appunti - inserire selezione lingua -->
-                 <!-- mettere il form contattami invece di iscrizione -->
-                 <ul>
-                    <li><a href="">Sign In</a></li>
-                    <li><a href="">Sign Up</a></li>
-                 </ul>
+                <!-- mettere il form contattami invece di iscrizione -->
+                <ul>
+                    <li><a href="" title="iscriviti alla mia newsletter">Iscriviti</a></li>
+                    <select id="language" name="language">
+                        <option value="it" selected></option>
+                        <option value="en"></option>
+                    </select>
+                </ul>
             </div>
         </header>
         <main>
@@ -43,12 +47,12 @@
                 <div>
                     <h1>Chi sono?</h1>
                     <p>
-                    Mi chiamo <strong>Riccardo Mancinelli</strong> sono un ingegnere meccatronico appassionato di 
-<em>sistemi embedded</em>,<em>robotica</em> e <em>programmazione</em>.
+                        Mi chiamo <strong>Riccardo Mancinelli</strong> sono un ingegnere meccatronico appassionato di 
+                        <em>sistemi embedded</em>,<em>robotica</em> e <em>programmazione</em>.
                     </p>
                     <p>
-                    Nell'ultimo periodo mi sto avvicinando al mondo della <em>programmazione Web</em> perchè mi piacerebbe 
-essere in grado di sviluppare sistemi IoT complessi sia lato scheda elettronica che lato PC.
+                        Nell'ultimo periodo mi sto avvicinando al mondo della <em>programmazione Web</em> perchè mi piacerebbe 
+                        essere in grado di sviluppare sistemi IoT complessi sia lato scheda elettronica che lato PC.
                     </p>
                     <a href="" title="guarda le mie informazioni personali">Scopri di più su di me!</a>
                 </div>
@@ -101,35 +105,42 @@ essere in grado di sviluppare sistemi IoT complessi sia lato scheda elettronica 
             <section id="progetti">
                 <div class="progetti-wildcard">
                     <!-- pic -->
-                    <img src="" alt="microchip scheda pic">
                     <h2>Controllore banco test</h2>
                     <h3>Sistema embedded - C</h3>
                     <h4>2023 - 2024</h4>
+                    <a href="">Vai ai progetti</a>
                 </div>
                 <div class="progetti-wildcard">
                     <!-- raspberry -->
-                    <img src="" alt="raspberry">
                     <h2>Sistema Hardware in the Loop</h2>
                     <h3>Sistema embedded - Python</h3>
                     <h4>2023 - 2024</h4>
+                    <a href="">Vai ai progetti</a>
                 </div>
                 <div class="progetti-wildcard">
                     <!-- computer vision -->
-                    <img src="" alt="robot KuKa Open CV">
-                    <h2>Programmazione Robot KRL - Python</h2>
-
+                    <h2>Pick and Place</h2>
+                    <h3>Programmazione Robot KRL - Python</h3>
+                    <h4>2023</h4>
+                    <a href="">Vai ai progetti</a>
                 </div>
                 <div class="progetti-wildcard">
                     <!-- robotstudio -->
-                    <img src="" alt="robotstudio">
+                    <h2>Linea automatica di produzione</h2>
+                    <h3>Programmazione Robot ABB - Solidworks</h3>
+                    <h4>2022</h4>
+                    <a href="">Vai ai progetti</a>
                 </div>
                 <div class="progetti-wildcard">
                     <!-- sito web -->
-                    <img src="" alt="screen questo sito">
+                    <h2>Sviluppo sito Web personale</h2>
+                    <h3>HTML - CSS</h3>
+                    <h4>2024</h4>
+                    <a href="">Vai ai progetti</a>
                 </div>
                 <div class="progetti-wildcard">
                     <!-- altro -- sezione in forse -->
-                    <img src="" alt="altro">
+                    <a href="">Scopri tutti i progetti</a>
                 </div>
             </section>
 
@@ -138,22 +149,37 @@ essere in grado di sviluppare sistemi IoT complessi sia lato scheda elettronica 
             <section id="attivita">
                 <div>
                     <!-- CherryBytes -->
-                     <img src="" alt="logo cherrybytes">
-                     <p>
-                        <!-- inserire immagine di sfondo che sale verso l'alto con i componenti dell'azienda -->
-                     </p>
+                    <img src="" alt="logo cherrybytes">
+                    <p>
+                    <!-- inserire immagine di sfondo che sale verso l'alto con i componenti dell'azienda -->
+                    CherryBytes nasce dall'idea di portare sul mercato europeo strumentazioni di test 
+                    all'avanguardia che si distinguono dai competitors per la loro modularità e flessibilità
+                    di utilizzo, strizzando l'occhio soprattutto al settore Automotive.
+                    </p>
                 </div>
                 <div>
                     <!-- Maghreb Cosmetics -->
-                     <img src="" alt="logo maghreb-cosmetics">
-                     <p>
-                        <!-- inserire immagine di sfondo che sale verso l'alto con i componenti dell'azienda -->
-                     </p>
+                    <img src="" alt="logo maghreb-cosmetics">
+                    <p>
+                    <!-- inserire immagine di sfondo che sale verso l'alto con i componenti dell'azienda -->
+                    Maghreb-cosmetics esiste grazie alla passione mia e di mia moglie verso il mondo magrebino, 
+                    e dalla nostra intraprendenza nel portare i prodotti di cura personale Marocchini prima in 
+                    Italia e successivamente anche in Europa.
+                    </p>
                 </div>
             </section>
         </main>
         <footer id="contatti">
-
+            <div class="footer-col">
+                <h2>Contattami</h2>
+                <p>Email : <a href="mailto:ric.man@virgilio.it">ric.man@virgilio.it</a></p>
+                <p>Telefono : <a href="tel:+393491011109">+39 3491011109</a></p>
+            </div>
+            <div class="footer-col">
+                <h2>Vienimi a trovare</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.9845707448185!2d10.527066576106797!3d44.842247571070615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47803d198d3b02d9%3A0x101db7f6ddc5c4e!2sVia%20Parma%2C%2059%2C%2042028%20Poviglio%20RE%2C%20Italia!5e0!3m2!1sit!2sie!4v1725647954215!5m2!1sit!2sie" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </footer>
     </body>
 </html>
