@@ -37,6 +37,7 @@ header{
     position: fixed;
     background-color: rgb(190, 236, 254);
     border-bottom: 2px solid darkblue;
+    z-index: 3;
 }
 
 header div:last-child {
@@ -174,3 +175,10 @@ main {
 
 /* dichiarazioni per stilizzare il percorso accademico -------------------------- */
 
+#studi{
+    background-image: url('../img/laurea.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
