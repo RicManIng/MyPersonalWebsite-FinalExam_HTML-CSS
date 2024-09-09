@@ -219,3 +219,66 @@ main {
     color: white;
     transition: all 0.5s;
 }
+
+
+/* dichiarazioni per stilizzare le esperienze lavorative ---------------------------- */
+
+#esperienze {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+}
+
+#esperienze-wildcards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+#esperienze-wildcards .wildcard-esperienze{
+    width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.wildcard-esperienze h2{
+    text-align: center;
+}
+
+#esperienze-wildcards .wildcard-esperienze img{
+    width:100%;
+}
+
+#esperienze a{
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: darkblue;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    transition: all 0.5s;
+}
+
+#esperienze a:hover{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    transition: all 0.5s;
+    background-color: darkblue;
+    color: white;
+}
+
+/* dichiarazioni per stilizzare i progetti ----------------------------------------- */
+
