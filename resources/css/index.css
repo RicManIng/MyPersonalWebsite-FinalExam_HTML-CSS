@@ -50,7 +50,7 @@ header div ul{
     align-items: center;
     height: 100%;
     list-style: none;
-    gap: 20px;
+    gap: 0px;
 }
 
 header div ul li{
@@ -97,7 +97,9 @@ select {
 
 #newsletter-container{
     background: none;
+    padding-right: 20px;
 }
+
 
 /* dichiarazioni per stilizzare il main -----------------------------------  */
 
@@ -118,7 +120,7 @@ main {
 }
 
 #chi-sono img, #chi-sono div{
-    width: 30%;
+    width: 375px;
 }
 
 #chi-sono img{
@@ -144,6 +146,7 @@ main {
     border-radius: 20px;
     box-shadow: 2px 2px black;
     transition: all 0.5s;
+    color: darkblue;
 }
 
 #chi-sono div a:hover{
@@ -181,4 +184,38 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#studi div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    min-width: 400px;
+    margin-left: 10vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#studi h1, #studi p, #studi a{
+    color: white;
+    text-align: center;
+}
+
+#studi a{
+    padding: 8px 15px;
+    background-color: lightblue;
+    color: darkblue;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+#studi a:hover{
+    background-color: blue;
+    color: white;
+    transition: all 0.5s;
 }
