@@ -293,55 +293,39 @@ main {
 .progetti-wildcard{
     height: 100%;
     width:20%;
-    transition:all 2s;
+    transition:all 1s;
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .progetti-wildcard:hover{
     width: 100%;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 #pic {
     background-image: url('../img/pic32-maxi-web.jpg');
     background-color: rgba(139, 0, 0, 0.8); 
-    background-blend-mode: overlay; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #raspberry {
     background-image: url('../img/rasppi.jpg');
     background-color: rgba(0, 100, 0, 0.8);
-    background-blend-mode: overlay; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #cv {
     background-image: url('../img/visionsystem.avif');
     background-color: rgba(255, 140, 0, 0.8);
-    background-blend-mode: overlay; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #robotstudio {
     background-image: url('../img/robotstudio.jpg');
     background-color: rgba(139, 0, 139, 0.8);
-    background-blend-mode: overlay; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #webdev {
     background-image: url('../img/webdevelopment.jpg');
     background-color: rgba(0, 0, 139, 0.8);
-    background-blend-mode: overlay; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
