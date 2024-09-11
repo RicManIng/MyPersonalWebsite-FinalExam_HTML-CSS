@@ -299,12 +299,44 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.progetti-wildcard h2{
+    color: white;
+    font-size: 2rem;
+    padding: 0px 10%;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+.progetti-wildcard:hover h2{
+    font-size: 3rem;
+    transition: all 1s;
+}
+
+.progetti-wildcard div{
+    display: none;
 }
 
 .progetti-wildcard:hover{
     width: 100%;
     transition: all 1s;
 }
+
+.progetti-wildcard:hover div{
+    display: flex;
+    flex-direction: column;
+}
+
+.progetti-wildcard div h3, .progetti-wildcard div h4 {
+    color: white;
+    font-size: 1.5rem;
+}
+
 
 #pic {
     background-image: url('../img/pic32-maxi-web.jpg');
