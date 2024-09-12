@@ -13,7 +13,6 @@ a {
 
 * {
     max-width: 100vw;
-    max-height: 100%;
     margin:0px;
     padding:0px;
     overflow-x: hidden;
@@ -282,10 +281,15 @@ main {
 }
 
 /* dichiarazioni per stilizzare i progetti ----------------------------------------- */
+#titolo{
+    width: 100%;
+    padding: 10vh 0px;
+    text-align: center;
+}
 
 #progetti{
     display: grid;
-    height: 90vh;
+    height: 70vh;
     /* grid-template-columns: 3fr, 0.33fr, 0.33fr, 0.33fr, 0.33fr; */
     grid-template-columns: repeat(5, 1fr); 
     transition: all 1s;
@@ -379,38 +383,110 @@ main {
 /* dichiarazioni per stilizzare le attività ------------------------------------------- */
 
 #attivita {
-    height: 90vh;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    height: 80vh;
     overflow: hidden;
 }
 
-#attivita.container{
+#attivita .container {
     height: 200%;
-    width: 50%;
-    overflow: hidden;
+    transition: all 1s;
 }
 
-#attivita .container div{
-    width: 100%;
+#attivita .container:hover {
     height: 100%;
 }
 
-/* #attivita .container{
+#maghreb{
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../img/sfondo-maghreb.jpeg');
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#maghreb:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+#cherrybytes{
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../img/cyber-2377718_1280.jpg');
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cherrybytes:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.image, .content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    max-height: 100%;
+}
+
+.content {
+    flex-direction: column;
+    gap:20px;
+}
+
+.content p{
     width: 50%;
-    height: 200%;
+    text-align: center;
+}
+
+.content a{
+    width: 20%;
+    padding: 5px;
+    background-color: lightblue;
+    color: darkblue;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+
+.content a:hover{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+    background-color: darkblue;
+    color: lightblue;
+}
+
+/* dichiarazioni per stilizzare il footer --------------------------------------------- */
+
+footer {
+    background-color: black;
+    display: flex;
+    height: 85vh;
+}
+
+footer .footer-col{
+    width: 30%;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4vh
+}
+
+footer h2, footer p, footer a{
+    color: white;
     transition: all 1s;
-    overflow: hidden;
 }
 
-#attivita .container:hover{
-    height: 100%;
+footer a:hover {
+    color: blue;
 }
-
-#attivita .container img, #attivita .container div{
-    height: 50%;
-}
- */

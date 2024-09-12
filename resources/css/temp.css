@@ -1,47 +1,31 @@
 * {
     margin:0px;
     padding: 0px;
-    height: 100%;
-    width: 100%;
 }
 
 body{
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    transition: all 1s;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+}
+div {
+    width: 33%;
+    height: 400px;
 }
 
-#black {
+#black{
     background-color: black;
 }
 
-#red {
+#red{
     background-color: red;
 }
 
-#yellow {
+#yellow{
     background-color: yellow;
-}
-
-/* Quando il mouse è sopra il primo div (black), cambiamo le dimensioni delle colonne */
-main:hover > #black:hover ~ #red, 
-main:hover > #black:hover ~ #yellow {
-    grid-template-columns: 2fr 0.5fr 0.5fr;
-}
-
-/* Quando il mouse è sopra il secondo div (red), cambiamo le dimensioni delle colonne */
-main:hover > #red:hover ~ #black, 
-main:hover > #red:hover ~ #yellow {
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-}
-
-/* Quando il mouse è sopra il terzo div (yellow), cambiamo le dimensioni delle colonne */
-main:hover > #yellow:hover ~ #black, 
-main:hover > #yellow:hover ~ #red {
-    grid-template-columns: 0.5fr 0.5fr 2fr;
 }
