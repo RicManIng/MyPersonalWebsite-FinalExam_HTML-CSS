@@ -288,15 +288,12 @@ main {
     height: 90vh;
     /* grid-template-columns: 3fr, 0.33fr, 0.33fr, 0.33fr, 0.33fr; */
     grid-template-columns: repeat(5, 1fr); 
+    transition: all 1s;
 }
-
-#progetti:hover{
-    grid-template-columns: 3fr, 0.33fr, 0.33fr, 0.33fr, 0.33fr;
-} 
 
 .progetti-wildcard{
     height: 100%;
-    width: 100%;
+    width: 200%;
     transition:all 1s;
     background-blend-mode: overlay; 
     background-size: cover;
@@ -305,15 +302,19 @@ main {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    transition: all 1s;
 }
 
+.progetti-wildcard:hover {
+    width: 100%;
+}
 .progetti-wildcard h2{
     color: white;
     font-size: 2rem;
-    padding: 0px 10%;
     text-align: center;
     transition: all 1s;
+    width: 50%;
 }
 
 
@@ -323,18 +324,11 @@ main {
 }
 
 .progetti-wildcard div{
-    display: none;
-}
-
-/* .progetti-wildcard:hover{
-    max-width: 50%;
-    transition: all 1s;
-} */
-
-.progetti-wildcard:hover div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5vh;
+    width: 50%;
 }
 
 .progetti-wildcard div h3, .progetti-wildcard div h4 {
@@ -343,6 +337,18 @@ main {
     text-align: center;
 }
 
+.progetti-wildcard div a{
+    padding: 8px 15px;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: darkblue;
+    transition: all 1s;
+}
+
+.progetti-wildcard div a:hover{
+    color: white;
+    background-color: blue;
+}
 
 #pic {
     background-image: url('../img/pic32-maxi-web.jpg');
@@ -368,3 +374,7 @@ main {
     background-image: url('../img/webdevelopment.jpg');
     background-color: rgba(0, 0, 139, 0.8);
 }
+
+
+/* dichiarazioni per stilizzare le attività ------------------------------------------- */
+

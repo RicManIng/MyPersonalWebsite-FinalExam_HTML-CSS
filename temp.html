@@ -15,5 +15,31 @@
 
             </div>
         </main>
+
+
+        <script>
+            window.onload = function() {
+                const blackDiv = document.getElementById('black');
+                const redDiv = document.getElementById('red');
+                const yellowDiv = document.getElementById('yellow');
+                const main = document.querySelector('main');
+    
+                blackDiv.addEventListener('mouseover', () => {
+                    main.style.gridTemplateColumns = '2fr 0.5fr 0.5fr';
+                });
+    
+                redDiv.addEventListener('mouseover', () => {
+                    main.style.gridTemplateColumns = '0.5fr 2fr 0.5fr';
+                });
+    
+                yellowDiv.addEventListener('mouseover', () => {
+                    main.style.gridTemplateColumns = '0.5fr 0.5fr 2fr';
+                });
+    
+                main.addEventListener('mouseleave', () => {
+                    main.style.gridTemplateColumns = '1fr 1fr 1fr';
+                });
+            };
+        </script>
     </body>
 </html>

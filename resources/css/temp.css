@@ -12,13 +12,12 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     transition: all 1s;
 }
 
 #black {
     background-color: black;
-
 }
 
 #red {
@@ -29,7 +28,20 @@ main{
     background-color: yellow;
 }
 
-main:hover{
-    grid-template-columns: 2fr, 0.5fr, 0.5fr;
-    transition: all 1s;
+/* Quando il mouse è sopra il primo div (black), cambiamo le dimensioni delle colonne */
+main:hover > #black:hover ~ #red, 
+main:hover > #black:hover ~ #yellow {
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+/* Quando il mouse è sopra il secondo div (red), cambiamo le dimensioni delle colonne */
+main:hover > #red:hover ~ #black, 
+main:hover > #red:hover ~ #yellow {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+/* Quando il mouse è sopra il terzo div (yellow), cambiamo le dimensioni delle colonne */
+main:hover > #yellow:hover ~ #black, 
+main:hover > #yellow:hover ~ #red {
+    grid-template-columns: 0.5fr 0.5fr 2fr;
 }

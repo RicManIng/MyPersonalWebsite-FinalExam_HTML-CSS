@@ -195,5 +195,41 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </footer>
+
+
+        <script>
+            window.onload = function() {
+                const pic = document.getElementById('pic');
+                const raspberry = document.getElementById('raspberry');
+                const cv = document.getElementById('cv');
+                const robotstudio = document.getElementById('robotstudio');
+                const webdev = document.getElementById('webdev');
+                const progetti = document.getElementById('progetti');
+    
+                pic.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '4fr 1fr 1fr 1fr 1fr';
+                });
+    
+                raspberry.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 4fr 1fr 1fr 1fr';
+                });
+    
+                cv.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 4fr 1fr 1fr';
+                });
+
+                robotstudio.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 4fr 1fr';
+                });
+
+                webdev.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 4fr';
+                });
+    
+                progetti.addEventListener('mouseleave', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr';
+                });
+            };
+        </script>
     </body>
 </html>
