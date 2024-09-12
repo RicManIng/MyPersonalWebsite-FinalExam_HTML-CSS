@@ -386,12 +386,24 @@ main {
     overflow: hidden;
 }
 
-#attivita .container{
+#attivita.container{
+    height: 200%;
     width: 50%;
-    height: 180vh;
+    overflow: hidden;
+}
+
+#attivita .container div{
+    width: 100%;
+    height: 100%;
+}
+
+/* #attivita .container{
+    width: 50%;
+    height: 200%;
     display: flex;
     flex-direction: column;
     transition: all 1s;
+    overflow: hidden;
 }
 
 #attivita .container:hover{
@@ -401,3 +413,4 @@ main {
 #attivita .container img, #attivita .container div{
     height: 50%;
 }
+ */
