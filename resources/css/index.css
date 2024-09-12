@@ -383,5 +383,21 @@ main {
     display: flex;
     align-items: stretch;
     justify-content: center;
+    overflow: hidden;
 }
 
+#attivita .container{
+    width: 50%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+#attivita .container:hover{
+    height: 100%;
+}
+
+#attivita .container img, #attivita .container div{
+    height: 50%;
+}
