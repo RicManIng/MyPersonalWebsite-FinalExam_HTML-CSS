@@ -378,3 +378,10 @@ main {
 
 /* dichiarazioni per stilizzare le attività ------------------------------------------- */
 
+#attivita {
+    height: 90vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
