@@ -479,7 +479,7 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 100vh;
     padding: 0px;
     width: 100%;
 }
@@ -552,4 +552,12 @@ footer form div input{
 footer label{
     color: white;
     font-size: 1.25rem;
+}
+
+form input, form textarea{
+    background-color: rgb(184, 184, 184);
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgb(78, 78, 78);
 }
