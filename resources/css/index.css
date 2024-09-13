@@ -560,10 +560,12 @@ footer label{
 
 form input, form textarea{
     background-color: rgb(184, 184, 184);
+    transition: all 0.5s;
 }
 
 form input::placeholder, form textarea::placeholder{
     color: rgb(78, 78, 78);
+    transition: all 0.5s;
 }
 
 form .bottoni input{
@@ -587,5 +589,13 @@ form .bottoni input:hover{
 
 #invia:hover{
     background-color: darkblue;
+    color: white;
+}
+
+form input:hover, form textarea:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+form input:hover::placeholder, form textarea:hover::placeholder{
     color: white;
 }
