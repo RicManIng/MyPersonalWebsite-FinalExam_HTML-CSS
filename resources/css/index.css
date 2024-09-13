@@ -494,6 +494,14 @@ footer .footer-col{
     gap: 4vh;
 }
 
+footer h2 {
+    font-size: 2rem;
+}
+
+footer p, footer a{
+    font-size: 1.25rem;
+}
+
 footer h2, footer p, footer a{
     color: white;
     transition: all 1s;
@@ -517,6 +525,11 @@ footer form div{
 footer form input, footer form textarea, footer form select{
     border-radius: 10px;
     border: none;
+    padding: 10px;
+}
+
+#telefono {
+    padding: 0px 10px;
 }
 
 footer form input, footer form div {
@@ -538,4 +551,5 @@ footer form div input{
 
 footer label{
     color: white;
+    font-size: 1.25rem;
 }
