@@ -478,7 +478,10 @@ main {
 footer {
     background-color: black;
     display: flex;
+    justify-content: space-evenly;
     height: 85vh;
+    padding: 0px;
+    width: 100%;
 }
 
 footer .footer-col{
@@ -498,4 +501,41 @@ footer h2, footer p, footer a{
 
 footer a:hover {
     color: blue;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+footer form div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+footer form input, footer form textarea, footer form select{
+    border-radius: 10px;
+    border: none;
+}
+
+footer form input, footer form div {
+    margin-bottom: 3vh;
+}
+
+footer form div input, footer form div select{
+    margin: 0px;
+    height: 100%;
+}
+
+footer form div select {
+    width: 35%;
+}
+
+footer form div input{
+    width:65%;
+}
+
+footer label{
+    color: white;
 }
