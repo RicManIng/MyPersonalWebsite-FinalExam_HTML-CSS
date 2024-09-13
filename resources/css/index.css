@@ -676,4 +676,24 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
     #titolo{
         padding: 2vh 0px;
     }
+
+
+}
+
+@media (max-width: 900px){
+    /* promo -------------------------------------------- */
+    #promo video{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+
+    #promo {
+        background-color: white;
+    }
+
+    /* progetti ------------------------------------------ */
+
+
+    /* header -------------------------------------------- */
 }
