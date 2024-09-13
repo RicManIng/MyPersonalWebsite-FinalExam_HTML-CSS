@@ -55,7 +55,7 @@
                         Nell'ultimo periodo mi sto avvicinando al mondo della <em>programmazione Web</em> perchè mi piacerebbe 
                         essere in grado di sviluppare sistemi IoT complessi sia lato scheda elettronica che lato PC.
                     </p>
-                    <a href="" title="guarda le mie informazioni personali">Scopri di più su di me!</a>
+                    <a href="#promo" title="guarda le mie informazioni personali">Scopri di più su di me!</a>
                 </div>
             </section>
 
@@ -92,17 +92,17 @@
                     <div class="wildcard-esperienze">
                         <img src="resources/img/elettr-logo.png" alt="logo-elettrosw">
                         <h2>PLC Software Engineer</h2>
-                        <h3>10/2022 - 11/2022</h3>
+                        <h3>10/2021 - 11/2021</h3>
                     </div>
                     <div class="wildcard-esperienze">
                         <img src="resources/img/kloo-logo.png" alt="logo-kloops">
                         <h2>Software Engineer</h2>
-                        <h3>12/2022 - 08/2023</h3>
+                        <h3>12/2021 - 08/2022</h3>
                     </div>
                     <div class="wildcard-esperienze">
                         <img src="resources/img/zapi-logo.png" alt="logo-zapi">
                         <h2>Test Engineer</h2>
-                        <h3>10/2023 - oggi</h3>
+                        <h3>10/2022 - oggi</h3>
                     </div>
                 </div>
                 <a href="" title="vai ai dettagli sulle mansioni ricoperte">Guarda nel dettaglio la carriera lavorativa</a>
@@ -197,8 +197,32 @@
         </main>
         <footer id="contatti">
             <div class="footer-col">
-                <h2>Fissa un appuntamento</h2>
+                <h2>Richiedi informazioni</h2>
                 <!-- qui ci va il form -->
+                <form action="http://www.riccardomancinelli.com/prenotazioni.php" method="get">
+                    <label for="nome">Nome : </label>
+                    <input type="text" name="nome" id="name" placeholder="inserisci il tuo Nome" required maxlength="30">
+                    <label for="cognome">Cognome : </label>
+                    <input type="text" name="cognome" id="surname" placeholder="inserisci il tuo Cognome" required maxlength="30">
+                    <label for="telefono">Cellulare : </label>
+                    <div>
+                        <select id="phone-prefix" name="phone-prefix">
+                            <option value="+1">🇺🇸 +1 Stati Uniti</option>
+                            <option value="+44">🇬🇧 +44 Regno Unito</option>
+                            <option value="+39">🇮🇹 +39 Italia</option>
+                            <option value="+33">🇫🇷 +33 Francia</option>
+                            <option value="+49">🇩🇪 +49 Germania</option>
+                            <option value="+34">🇪🇸 +34 Spagna</option>
+                            <option value="+81">🇯🇵 +81 Giappone</option>
+                            <!-- Aggiungi altri prefissi telefonici qui -->
+                        </select>
+                        <input type="tel" id="telefono" name="telefono" 
+                        minlength="10" maxlength="15" required 
+                        placeholder="Inserisci il numero di telefono">
+                    </div>
+                    <label for="email">E-mail : </label>
+                    <input type="email" placeholder="inserisci la tua e-mail" required>
+                </form>
             </div>
             <div class="footer-col">
                 <h2>Contatti</h2>
