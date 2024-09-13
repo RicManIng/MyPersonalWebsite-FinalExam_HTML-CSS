@@ -532,6 +532,10 @@ footer form input, footer form textarea, footer form select{
     padding: 10px;
 }
 
+footer form select{
+    padding: 8px 10px;
+}
+
 #telefono {
     padding: 0px 10px;
 }
@@ -558,7 +562,7 @@ footer label{
     font-size: 1.25rem;
 }
 
-form input, form textarea{
+form input:placeholder-shown, form textarea:placeholder-shown{
     background-color: rgb(184, 184, 184);
     transition: all 0.5s;
 }
@@ -598,4 +602,9 @@ form input:hover, form textarea:hover {
 
 form input:hover::placeholder, form textarea:hover::placeholder{
     color: white;
+}
+
+form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
+    background-color: white;
+    color: black;
 }
