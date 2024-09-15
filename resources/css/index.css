@@ -744,7 +744,7 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
 
 }
 
-@media only screen and (max-width: 900px), , only screen and (min-resolution: 2dppx){
+@media only screen and (max-width: 900px), only screen and (min-resolution: 2dppx){
     /* promo -------------------------------------------- */
     #promo video{
         width: 100%;
@@ -823,6 +823,16 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
 
     #promo {
         background-color: black;
+    }
+
+    /* esperienze ------------------------------------------*/
+
+    #esperienze {
+        height: 70vh;
+    }
+
+    #esperienze-wildcards .wildcard-esperienze{
+        height: 30vh;
     }
 
 }
