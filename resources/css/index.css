@@ -797,6 +797,32 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
 
     /* chi sono -------------------------------------------- */
 
-    
+    #chi-sono{
+        background-image: url('../img/foto.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #chi-sono img{
+        display: none;
+    }
+
+    #chi-sono div{
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5%;
+        border-radius: 20px;
+    }
+
+    #chi-sono p, #chi-sono h1{
+        color: white;
+    }
+
+
+    /* promo ----------------------------------------------- */
+
+    #promo {
+        background-color: black;
+    }
 
 }
