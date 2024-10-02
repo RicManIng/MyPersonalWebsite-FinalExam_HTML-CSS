@@ -1,0 +1,38 @@
+Ciao Riccardo,
+ho guardato il tuo esame di prima sessione.
+
+
+Dal punto di vista grafico hai fatto un discreto lavoro fino ad ora, ti indico però qualche aspetto che potrebbe rendere il tuo sito ancora più professionale e gradevole (ti evidenzio quelle da rivalutare!):
+
+scelta dei colori. Assicurati di avere una palette di colori ben equilibrata che non faccia apparire il tuo sito troppo giocoso se hai in mente di fare un sito serio e viceversa.
+leggibilità delle scritte. Assicurati di avere scritte di dimensioni adeguate e con un contrasto efficace a rendere il tutto leggibile
+risalto ed evidenza delle sezioni più importanti. assicurati di rendere visivamente chiaro quale parte del documento è importante e quale parte è secondaria
+uso degli spazi e disposizione dei testi e delle immagini. assicurati di non avere oggetti che sembrano sparpagliati sulla pagina e di avere dei testi non troppo lunghi. Il testo di un paragrafo non deve coprire metà della lunghezza del video in modalità desktop, meglio a quel punto dividerlo in colonne.
+sfondo e testi con contrasto. Assicurati che gli sfondi dei tuoi lavori non invadano la parte importante, ovvero il testo che vuoi comunicare.
+valuta l'uso di margini e padding adeguati per impaginare correttamente il lavoro
+confrontati e cerca spunto sempre sa chi sa fare questo mestiere. Esistono siti di professionisti che vendono o mostrano online i loro template. e' gente preparata, che ha gusto ed è aggiornata sulle mode. Prendi spunto da loro e fatti un tuo gusto personale. Basta cercare "template HTML5" e ne trovi moltissimi.
+
+
+
+Dal punto di vista tecnico e del codice hai dato una buona impostazione iniziale, ma c’è qualche aspetto che deve essere revisionato/rivisto/potenziato e corretto per poter validare l’esame.
+
+
+Ti do qualche indicazione anche se molte le hai già fatte (ti evidenzio quelle da controllare!):
+tutte le pagine del sito devono essere coerenti tra di loro, quindi avere le stesse impostazioni stilistiche e grafiche. Si deve capire che siamo sempre sullo stesso sito
+il sito deve avere un header che contenga la nav con i link di navigazione ed un footer con le informazioni tipiche dei footer (contatti, copyright, partita iva, link alla cookies policy e link alla privacy policy)
+il sito deve avere un menu in tutte le sue pagine che diventa usabile anche nella modalità mobile e tablet
+tutte le pagine devono essere ottimizzate sia per desktop che per mobile, quindi attenzione a dimensione del testo, margini e visualizzazioni delle immagini
+tutte le pagine devono essere validate. Hai qualche nel tuo codice
+tutti i link devono contenere l'attributo TITLE che indica all'utente cosa accade in caso di click sul link
+il tuo lavoro al momento non deve contenere javascript, quindi devi realizzare tutto quello di cui hai bisogno senza javascript. Avrai tempo in futuro per usarlo fino alla nausea
+il CSS del tuo sito non deve contenere elementi rindondanti, quindi dovrai creare un foglio CSS che contenga gli elementi comuni di tutte le pagine e se vuoi un foglio per pagina che contenga solo gli elementi per la pagina specifica. Ovviamente includerai entrambi i file nell'html
+i nomi dei file e delle cartelle non possono avere spazi o caratteri speciali, quindi ti consiglio di usare solo lettere, numeri e underscore
+i percorsi dei tuoi file devono essere relativi alla cartella base del sito,  quindi se hai dei percorsi che iniziano per C:\ di sicuro sono sbagliati. Se iniziano per / probabilmente non funzionano se non su un server specifico, i tuoi percorsi dovrebbero partire con ./
+Ti ricordo di guardare anche la sezione Tips & Tricks sulla nostra piattaforma dove vengono trattati in maniera sintetica alcuni di questi aspetti. Presta maggiore attenzione al lato responsive e inserisci la pagina/area per il dettaglio del lavoro/progetto. Il menu che hai usato non si chiude al click... questo rende il sito inusabile.
+Rivedi tutti questi aspetti e carica il tuo esame in piattaforma come al solito per la valutazione. Per una correzione approfondita prendi questo elenco puntato come una checklist, non trascurare gli elementi che ho riportato!
+Non esitare a contattare l’assistenza se non dovessi riuscire in qualche passaggio, buon lavoro. :)
+
+
+
+Ciao
+Rino
