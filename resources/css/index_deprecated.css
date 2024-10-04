@@ -1,18 +1,9 @@
-/* Global Styles */
-:root {
-    --primary-color: rgb(190, 236, 254);
-    --secondary-color: darkblue;
-    --hover-color: rgb(0, 0, 93);
-    --text-color: black;
-    --border-color: black;
-}
+/* sezione per le dichiarazioni generali -----------------------------------*/
 
-body, a, * {
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0px;
+    padding: 0px;
     font-family: Poppins, sans-serif;
-    max-width: 100vw;
-    overflow-x: hidden;
 }
 
 a {
@@ -20,53 +11,54 @@ a {
     color: black;
 }
 
-h1 {
-    font-size: 2.5rem;
+* {
+    max-width: 100vw;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* Header Styles */
-header {
+h1 {
+    font-size: 2.5rem;
+}
+
+/* dichiarazioni per stilizzare l'header ----------------------------------*/
+
+header{
     display: flex;
     justify-content: space-between;
     height: 10vh;
     width: 100%;
     position: fixed;
-    background-color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    background-color: rgb(190, 236, 254);
+    border-bottom: 2px solid darkblue;
     z-index: 3;
     overflow: visible;
 }
 
-/* Nascondi l'input checkbox */
-#dropdown-list-tag input[type="checkbox"] {
+/* #dropdown-menu{
     display: none;
+} */
+
+#dropdown-list-tag{
+    display: none;
+    flex-direction: column;
 }
 
-/* Stile per l'etichetta dell'icona hamburger */
-#dropdown-list-tag label {
-    display: none; /* Sarà mostrata nella media query */
+#dropdown-list-tag i{
     height: 10vh;
     width: 20vw;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#dropdown-list-tag label i {
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
 }
 
-/* Menu a tendina nascosto di default */
-#dropdown-menu {
+#dropdown-menu{
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -75,37 +67,41 @@ header {
     top: 100%;
     left: 0%;
     z-index: 4;
-    overflow: hidden;
-    transition: height 0.5s;
+    transition: all 0.5s;
 }
 
-/* Apri il menu quando il checkbox è selezionato */
-#dropdown-list-tag input[type="checkbox"]:checked ~ #dropdown-menu {
+#dropdown-list-tag:hover{
+    background: linear-gradient(to bottom, rgb(190, 236, 254), darkblue);
+}
+
+#dropdown-list-tag:hover #dropdown-menu{
     height: 70vh;
 }
 
-/* Mantieni gli altri stili esistenti */
-#dropdown-menu li {
+#dropdown-menu li{
     height: 20vh;
     width: 100%;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
 }
 
-#dropdown-menu li a {
+#dropdown-menu li{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+#dropdown-menu li a{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
+    justify-content: center;   
+    padding: 0px;
 }
 
-#dropdown-menu #newsletter-container-drop {
-    background-color: var(--secondary-color);
+#dropdown-menu #newsletter-container-drop{
+    background-color: darkblue;
 }
 
-#dropdown-menu #newsletter-container-drop a {
+#dropdown-menu #newsletter-container-drop a{
     color: white;
 }
 
@@ -113,30 +109,30 @@ header div:last-child {
     padding-right: 3vw;
 }
 
-header div ul {
+header div ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 100%;
     list-style: none;
-    gap: 0;
+    gap: 0px;
 }
 
-header div ul li {
+header div ul li{
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-header div ul li:hover {
-    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+header div ul li:hover{
+    background: linear-gradient(to bottom, rgb(190, 236, 254), darkblue);
 }
 
-header div ul li a {
+header div ul li a{
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0px 10px;
 }
 
 #header-img {
@@ -146,115 +142,123 @@ header div ul li a {
 select {
     height: 33%;
     width: 45px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 #newsletter {
     height: 50%;
-    padding: 0 10px;
+    padding: 0px 10px;
     background-color: blue;
     color: white;
-    border: 2px solid var(--border-color);
+    border: 2px solid black;
     border-radius: 10px;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: all 0.5s;
 }
 
-#newsletter:hover {
-    background-color: var(--hover-color);
+#newsletter:hover{
+    background-color: rgb(0, 0, 93);
+    transition: all 0.5s;
 }
 
-#newsletter-container {
+#newsletter-container{
     background: none;
     padding-right: 20px;
 }
 
-/* Main Styles */
+
+/* dichiarazioni per stilizzare il main -----------------------------------  */
+
 main {
     margin-top: 10vh;
 }
 
-/* Section Styles */
-#chi-sono {
+/* dichiarazioni per stilizzare il chi sono -------------------------------- */
+
+#chi-sono{
     display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10vh 0;
+    padding: 10vh 0px;
 }
 
-#chi-sono img, #chi-sono div {
-    width: 30%;
+#chi-sono img, #chi-sono div{
+    width:30%;
     min-width: 300px;
     max-height: 80vh;
 }
 
-#chi-sono img {
-    border: 2px solid var(--border-color);
+#chi-sono img{
+    border: 2px solid black;
     border-radius: 20px;
     overflow: hidden;
 }
 
-#chi-sono div {
+#chi-sono div{
     display: flex;
     flex-direction: column;
     gap: 5vh;
     padding: 10px;
 }
 
-#chi-sono div h1, #chi-sono div a {
+#chi-sono div h1, #chi-sono div a{
     text-align: center;
 }
 
-#chi-sono div a {
+#chi-sono div a{
     padding: 10px;
     background-color: skyblue;
     border-radius: 20px;
-    box-shadow: 2px 2px var(--border-color);
+    box-shadow: 2px 2px black;
     transition: all 0.5s;
-    color: var(--secondary-color);
+    color: darkblue;
 }
 
-#chi-sono div a:hover {
+#chi-sono div a:hover{
     position: relative;
     top: 2px;
     left: 2px;
     color: white;
-    background-color: var(--secondary-color);
+    background-color: darkblue;
     box-shadow: none;
+    transition: all 0.5s;
 }
 
-/* Video Promo Styles */
+/* dichiarazioni per stilizzare il video promo --------------------------------- */
+
 #promo {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vh 0;
+    padding: 10vh 0px;
     background-color: rgb(0, 0, 73);
     width: 100%;
 }
 
 #promo video {
     width: 70%;
-    border: 2px solid var(--border-color);
+    border: 2px solid black;
     border-radius: 20px;
 }
 
-/* Studi Section Styles */
-#studi {
+/* dichiarazioni per stilizzare il percorso accademico -------------------------- */
+
+#studi{
     background-image: url('../img/laurea.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    padding: 10vh 0;
-    height: 90vh;
+    padding: 10vh 0px;
 }
 
-#studi div {
+#studi div{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 30%;
+    width: 30%;
     min-width: 400px;
     margin-left: 10vw;
     align-items: center;
@@ -263,30 +267,32 @@ main {
     padding: 30px;
 }
 
-#studi h1, #studi p, #studi a {
+#studi h1, #studi p, #studi a{
     color: white;
     text-align: center;
-    width: 100%;
 }
 
-#studi p, #studi a {
+#studi p, #studi a{
     font-size: 1.25rem;
 }
 
-#studi a {
+#studi a{
     padding: 8px 15px;
     background-color: lightblue;
-    color: var(--secondary-color);
+    color: darkblue;
+    transition: all 0.5s;
     border-radius: 10px;
+}
+
+#studi a:hover{
+    background-color: blue;
+    color: white;
     transition: all 0.5s;
 }
 
-#studi a:hover {
-    background-color: blue;
-    color: white;
-}
 
-/* Esperienze Section */
+/* dichiarazioni per stilizzare le esperienze lavorative ---------------------------- */
+
 #esperienze {
     height: 90vh;
     display: flex;
@@ -294,7 +300,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 8vh;
-    padding: 3vh 0px;
 }
 
 #esperienze-wildcards {
@@ -304,11 +309,11 @@ main {
     width: 100%;
 }
 
-.wildcard-esperienze {
+#esperienze-wildcards .wildcard-esperienze{
     width: 20%;
     min-width: 200px;
     padding: 20px;
-    border: 2px solid var(--border-color);
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -319,67 +324,69 @@ main {
     margin-bottom: 5px;
 }
 
-.wildcard-esperienze h2 {
+.wildcard-esperienze h2{
     text-align: center;
 }
 
-.wildcard-esperienze img {
-    width: 100%;
+#esperienze-wildcards .wildcard-esperienze img{
+    width:100%;
 }
 
-#esperienze a {
+#esperienze a{
     padding: 10px 20px;
     background-color: lightblue;
-    color: var(--secondary-color);
+    color: darkblue;
     border-radius: 20px;
-    border: 2px solid var(--border-color);
-    box-shadow: 2px 2px var(--border-color);
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
     transition: all 0.5s;
     font-size: 1.25rem;
-    max-width: 80%;
-    text-align: center;
 }
 
-#esperienze a:hover {
+#esperienze a:hover{
     position: relative;
     top: 2px;
     left: 2px;
-    background-color: var(--secondary-color);
+    transition: all 0.5s;
+    background-color: darkblue;
     color: white;
     box-shadow: none;
 }
 
-/* Progetti Section */
-.titolo {
+/* dichiarazioni per stilizzare i progetti ----------------------------------------- */
+.titolo{
     width: 100%;
-    padding: 10vh 0;
+    padding: 10vh 0px;
     text-align: center;
 }
 
-#progetti {
+#progetti{
     display: grid;
-    min-height: 70vh;
-    grid-template-columns: repeat(5, 1fr);
+    height: 70vh;
+    /* grid-template-columns: 3fr, 0.33fr, 0.33fr, 0.33fr, 0.33fr; */
+    grid-template-columns: repeat(5, 1fr); 
     transition: all 1s;
 }
 
-.progetti-wildcard {
+.progetti-wildcard{
     height: 100%;
-    transition: all 1s;
+    width: 200%;
+    transition:all 1s;
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    transition: all 1s;
 }
 
 .progetti-wildcard:hover {
     width: 100%;
 }
-
-.progetti-wildcard h2 {
+.progetti-wildcard h2{
     color: white;
     font-size: 2rem;
     text-align: center;
@@ -387,11 +394,13 @@ main {
     width: 50%;
 }
 
-.progetti-wildcard:hover h2 {
+
+.progetti-wildcard:hover h2{
     font-size: 3rem;
+    transition: all 1s;
 }
 
-.progetti-wildcard div {
+.progetti-wildcard div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,23 +414,22 @@ main {
     text-align: center;
 }
 
-.progetti-wildcard div a {
+.progetti-wildcard div a{
     padding: 8px 15px;
     background-color: lightblue;
     border-radius: 10px;
-    color: var(--secondary-color);
+    color: darkblue;
     transition: all 1s;
 }
 
-.progetti-wildcard div a:hover {
+.progetti-wildcard div a:hover{
     color: white;
     background-color: blue;
 }
 
-/* Specific Background for Progetti Cards */
 #pic {
     background-image: url('../img/pic32-maxi-web.jpg');
-    background-color: rgba(139, 0, 0, 0.8);
+    background-color: rgba(139, 0, 0, 0.8); 
 }
 
 #raspberry {
@@ -444,56 +452,52 @@ main {
     background-color: rgba(0, 0, 139, 0.8);
 }
 
-/* Attività Section */
+
+/* dichiarazioni per stilizzare le attività ------------------------------------------- */
+
 #attivita {
     display: flex;
     height: 90vh;
     overflow: hidden;
-    border-top: 1px solid black;
+    border-top: 1px solid black
 }
 
 #attivita .container {
-    flex: 1;
     height: 200%;
-    transition: height 1s ease;
+    transition: all 1s;
 }
 
 #attivita .container:hover {
     height: 100%;
 }
 
-/* Maghreb Container */
-#maghreb {
+#maghreb{
     background-color: rgba(255, 255, 255, 1);
     background-image: url('../img/sfondo-maghreb.jpeg');
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-left: 1px solid black;
-    transition: background-color 1s ease;
 }
 
 #maghreb:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
-/* CherryBytes Container */
-#cherrybytes {
+#cherrybytes{
     background-color: rgba(255, 255, 255, 1);
     background-image: url('../img/cyber-2377718_1280.jpg');
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-color 1s ease;
 }
 
-#cherrybytes:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+#cherrybytes:hover{
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
-/* Styling for Image and Content */
 .image, .content {
     width: 100%;
     height: 50%;
@@ -502,22 +506,22 @@ main {
     align-items: center;
 }
 
-.image img {
+.image img{
     max-height: 100%;
 }
 
 .content {
     flex-direction: column;
-    gap: 20px;
+    gap:20px;
 }
 
-.content p {
+.content p{
     width: 70%;
     text-align: center;
     font-size: 1.25rem;
 }
 
-.content a {
+.content a{
     width: 20%;
     padding: 5px;
     background-color: lightblue;
@@ -526,10 +530,10 @@ main {
     border-radius: 20px;
     box-shadow: 2px 2px black;
     font-size: 1.25rem;
-    transition: all 1s ease;
+    transition: all 1s;
 }
 
-.content a:hover {
+.content a:hover{
     position: relative;
     top: 2px;
     left: 2px;
@@ -538,16 +542,18 @@ main {
     color: lightblue;
 }
 
-/* Footer Styles */
+/* dichiarazioni per stilizzare il footer --------------------------------------------- */
+
 footer {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 10vh;
+    padding: 0px;
     width: 100%;
+    padding-bottom: 10vh;
 }
 
-footer .footer-col {
+footer .footer-col{
     width: 30%;
     margin-top: 10vh;
     display: flex;
@@ -559,11 +565,13 @@ footer .footer-col {
 
 footer h2 {
     font-size: 2rem;
-    color: white;
 }
 
-footer p, footer a {
+footer p, footer a{
     font-size: 1.25rem;
+}
+
+footer h2, footer p, footer a{
     color: white;
     transition: all 1s;
 }
@@ -572,24 +580,24 @@ footer a:hover {
     color: blue;
 }
 
-footer form {
+footer form{
     display: flex;
     flex-direction: column;
 }
 
-footer form div {
+footer form div{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
-footer form input, footer form textarea, footer form select {
+footer form input, footer form textarea, footer form select{
     border-radius: 10px;
     border: none;
     padding: 10px;
 }
 
-footer form select {
+footer form select{
     padding: 8px 10px;
 }
 
@@ -601,7 +609,7 @@ footer form input, footer form div, footer form textarea {
     margin-bottom: 3vh;
 }
 
-footer form div input, footer form div select {
+footer form div input, footer form div select{
     margin: 0px;
     height: 100%;
 }
@@ -610,35 +618,35 @@ footer form div select {
     width: 35%;
 }
 
-footer form div input {
-    width: 58%;
+footer form div input{
+    width:58%;
 }
 
-footer label {
+footer label{
     color: white;
     font-size: 1.25rem;
 }
 
-form input:placeholder-shown, form textarea:placeholder-shown {
+form input:placeholder-shown, form textarea:placeholder-shown{
     background-color: rgb(184, 184, 184);
     transition: all 0.5s;
 }
 
-form input::placeholder, form textarea::placeholder {
+form input::placeholder, form textarea::placeholder{
     color: rgb(78, 78, 78);
     transition: all 0.5s;
 }
 
-form .bottoni input {
+form .bottoni input{
     width: 45%;
 }
 
-form .bottoni input:hover {
+form .bottoni input:hover{
     cursor: pointer;
     transition: all 0.3s;
 }
 
-#annulla:hover {
+#annulla:hover{
     background-color: rgb(61, 61, 61);
     color: white;
 }
@@ -648,7 +656,7 @@ form .bottoni input:hover {
     color: black;
 }
 
-#invia:hover {
+#invia:hover{
     background-color: darkblue;
     color: white;
 }
@@ -657,46 +665,63 @@ form input:hover, form textarea:hover {
     background-color: rgb(95, 95, 95);
 }
 
-form input:hover::placeholder, form textarea:hover::placeholder {
+form input:hover::placeholder, form textarea:hover::placeholder{
     color: white;
 }
 
-form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
+form input:not(:placeholder-shown), form textarea:not(:placeholder-shown){
     background-color: white;
     color: black;
 }
 
-/* ------------------------------------------------------------------------------------------------------ */
-/* Media Queries */
-@media (max-width: 1300px), only screen and (min-resolution: 2dppx) {
-    .progetti-wildcard:hover h2 {
+
+@media only screen and (max-height: 700px), only screen and (min-resolution: 2dppx){
+    /* alcune correzioni per la dimensione tablet */
+    .content p{
+        width: 90%;
+    }
+
+    #studi div {
+        width: 50%;
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 1300px), only screen and (min-resolution: 2dppx){
+    /* alcune correzioni per la dimensione tablet */
+    .progetti-wildcard:hover h2{
         font-size: 2rem;
     }
 }
 
-@media (max-width: 1100px), only screen and (min-resolution: 2dppx) {
-    footer {
+@media only screen and (max-width: 1100px), only screen and (min-resolution: 2dppx){
+    /* alcune correzioni per la dimensione smartphone */
+    /* footer------------------------------------------ */
+    footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    footer .footer-col {
+    /* questo non funziona ?? */
+    footer .footer-col{
         width: 100%;
     }
 
-    form {
-        width: 80%;
+    form{
+        width:80%;
     }
 
-    footer h2 {
+    footer h2{
         width: 300%;
         text-align: center;
     }
 
-    #telefono {
+    #telefono{
         padding: 8px 10px;
     }
+
+    /* attività --------------------------------------- */
 
     .container:hover .image {
         height: 35%;
@@ -710,123 +735,104 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
         width: 70%;
     }
 
-    .titolo {
+    /* titoli ------------------------------------------- */
+
+    #titolo{
         padding: 2vh 0px;
-        font-size: 2rem;
-        text-align: center;
     }
 
-    #studi {
-        justify-content: center;
-    }
 
-    #studi div {
-        margin-left: 0px;
-        min-width: 0px;
-        max-width: 80%;
-        padding: none;
-    }
-
-    #studi p, #studi a {
-        font-size: 1rem;
-    }
-
-    #esperienze {
-        height: auto;
-    }
-
-    #esperienze-wildcards {
-        flex-direction: column;
-        justify-content: center;
-        gap: 8vh;
-        align-items: center;
-    }
-
-    .content p, .content a {
-        font-size: 1rem;
-        width: 90%;
-    }
-
-    #progetti {
-        min-height: 200vh;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 20% 20% 20% 20% 20%;
-    }
-
-    .progetti-wildcard h2 {
-        font-size: 1.5rem;
-    }
-
-    .progetti-wildcard:hover h2 {
-        font-size: 1.5rem;
-    }
-
-    .progetti-wildcard div h3, .progetti-wildcard div h4 {
-        font-size: 1.2rem;
-    }
-
-    .progetti-wildcard div a {
-        font-size: 1rem;
-    }
 }
 
-@media (max-width: 900px), only screen and (min-resolution: 2dppx) {
-    header .no-drop {
-        display: none;
-    }
-
-    /* Mostra l'icona hamburger */
-    #dropdown-list-tag label {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header div {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-    }
-
-    header {
-        justify-content: space-evenly;
-    }
-
-    /* Eventuali altri aggiustamenti per schermi piccoli */
-
-    #chi-sono {
-        background-image: url('../img/foto.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #chi-sono img {
-        display: none;
-    }
-
-    #chi-sono div {
-        width: 60%;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 5%;
-        border-radius: 20px;
-    }
-
-    #chi-sono p, #chi-sono h1 {
-        color: white;
-    }
-
-    #promo video {
+@media only screen and (max-width: 900px), only screen and (min-resolution: 2dppx){
+    /* promo -------------------------------------------- */
+    #promo video{
         width: 100%;
         border-radius: 0px;
         border: none;
     }
 
     #promo {
-        background-color: black;
+        background-color: white;
     }
+
+    /* progetti ------------------------------------------ */
+
+    #progetti {
+        height: 50vh;
+    }
+
+    /* attività ------------------------------------------- */
 
     #attivita {
         height: 60vh;
     }
+
+    /* footer --------------------------------------------- */
+
+    #annulla, #invia, input::placeholder, textarea::placeholder, footer select option{
+        font-size: 1.25rem;
+    }
+
+    /* header -------------------------------------------- */
+
+    header .no-drop{
+        display: none;
+    }
+
+    #dropdown-list-tag{
+        display: flex;
+    }
+
+    header div{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    header{
+        justify-content: space-evenly;
+    }
+
+    /* chi sono -------------------------------------------- */
+
+    #chi-sono{
+        background-image: url('../img/foto.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #chi-sono img{
+        display: none;
+    }
+
+    #chi-sono div{
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5%;
+        border-radius: 20px;
+    }
+
+    #chi-sono p, #chi-sono h1{
+        color: white;
+    }
+
+
+    /* promo ----------------------------------------------- */
+
+    #promo {
+        background-color: black;
+    }
+
+    /* esperienze ------------------------------------------*/
+
+    #esperienze {
+        height: 70vh;
+    }
+
+    #esperienze-wildcards .wildcard-esperienze{
+        height: 30vh;
+    }
+
 }
