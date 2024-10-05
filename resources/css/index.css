@@ -211,6 +211,7 @@ main {
     box-shadow: 2px 2px var(--border-color);
     transition: all 0.5s;
     color: var(--secondary-color);
+    font-size: 1.25rem;
 }
 
 #chi-sono div a:hover {
@@ -220,6 +221,10 @@ main {
     color: white;
     background-color: var(--secondary-color);
     box-shadow: none;
+}
+
+#chi-sono p{
+    font-size: 1.25rem;
 }
 
 /* Video Promo Styles */
@@ -288,13 +293,13 @@ main {
 
 /* Esperienze Section */
 #esperienze {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8vh;
-    padding: 3vh 0px;
+    padding: 0px 0px 3vh 0px;
 }
 
 #esperienze-wildcards {
@@ -365,6 +370,7 @@ main {
 
 .progetti-wildcard {
     height: 100%;
+    width: 200%;
     transition: all 1s;
     display: flex;
     align-items: center;
@@ -766,6 +772,10 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
     }
 
     .progetti-wildcard div a {
+        font-size: 1rem;
+    }
+
+    #chi-sono p, #chi-sono div a {
         font-size: 1rem;
     }
 }
