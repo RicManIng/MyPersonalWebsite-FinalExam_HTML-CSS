@@ -33,12 +33,12 @@
                         <label for="menu-toggle"><i class="fas fa-bars"></i></label>
                         <!-- Il menu a tendina -->
                         <ul id="dropdown-menu">
-                            <li class="drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
-                            <li class="drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
-                            <li class="drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
-                            <li class="drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
-                            <li class="drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
-                            <li class="drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
+                            <li class="drop"><a href="index.html#chi-sono" title="vai alla sezione personale">About</a></li>
+                            <li class="drop"><a href="index.html#studi" title="vai alla sezione accademica">Studi</a></li>
+                            <li class="drop"><a href="index.html#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
+                            <li class="drop"><a href="index.html#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
+                            <li class="drop"><a href="index.html#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
+                            <li class="drop"><a href="index.html#contatti" title="vai alla sezione contatti">Contatti</a></li>
                             <li class="drop" id="newsletter-container-drop"><a href="#" title="iscriviti alla mia newsletter" id="newsletter-drop">Iscriviti alla newsletter</a></li>
                         </ul>
                     </li>
@@ -57,28 +57,54 @@
             </div>
         </header>
         <main>
+
             <section class="sezione" id="sezione-pic">
                 <img src="resources/img/pic32-maxi-web.jpg" alt="pic">
                 <h1>Controllore Banco Test</h1>
                 <h2>Zapi  -  2022/attuale</h2>
                 <h3>Skills : 
                     <ul>
-
+                        <li>C embedded</li>
+                        <li>microcontrollori Microchip</li>
+                        <li>MPlabXIde</li>
+                        <li>FreeRTOS</li>
                     </ul>
                 </h3>
-                <p>Descrizione progetto</p>
+                <p>
+                    Descrizione progetto : <br>
+                    Sviluppo di un software di controllo per l'esecuzione di test di durata sugli impianti cliente.
+                    Il controllore deve comandare l'impianto utilizzando il protocollo CanOpen proprietario ed inoltre
+                    deve verificare lo stato di sicurezza del test, intervenendo nel caso in cui si verifichino delle anomalie.
+                    Il progetto software è stato impostato per funzionare su più task in modo tale da avere un ristema Real-Time
+                    ed essere sicuri dell'esecuzione di determinate funzioni ad intervalli specifici.
+                </p>
             </section>
+
+
             <section class="sezione" id="sezione-rasp">
                 <img src="resources/img/rasppi.jpg" alt="raspi">
                 <h1>Banco test hardware in the loop</h1>
                 <h2>Zapi  -  2023/attuale</h2>
                 <h3>Skills : 
                     <ul>
-
+                        <li>Python</li>
+                        <li>Harware in the loop</li>
+                        <li>Linux embedded</li>
+                        <li>Raspberry Pi</li>
                     </ul>
                 </h3>
-                <p>Descrizione progetto</p>
+                <p>
+                    Descrizione progetto : <br>
+                    Sviluppo di un banco Hardware-in-the-loop per i test su software cliente. <br>
+                    Il banco è stato sviluppato utilizzando dispositivi interni controllati da una logica scritta in Python
+                    ed eseguita su un Raspberry Pi in ambiente Linux. <br>
+                    L'obiettivo era quello di garantire una risoluzione sulle variabili di controllo più elevata rispetto alla
+                    tolleranza accettata dalle specifiche della norma in modo tale da poter verificare le funzioni di 
+                    sicurezza interne all'impianto.
+                </p>
             </section>
+
+
             <section class="sezione" id="sezione-vision">
                 <img src="resources/img/visionsystem.avif" alt="vision">
                 <h1>Pick and Place con sistema di visione artificiale</h1>
@@ -94,8 +120,21 @@
                         <li>Visual Studio Code</li>
                     </ul>
                 </h3>
-                <p>Descrizione progetto</p>
+                <p>
+                    Descrizione progetto : <br>
+                    Sviluppo di una libreria in Python che sfrutta le potenzialità di una depth camera come la 
+                    IntelRealSense D435 per individuare oggetti nello spazio ed ottenerne coordinate cartesiane e 
+                    orientamento. <br>
+                    Successivamente è stato richiesto di sviluppare un protocollo di avvicinamento per migliorare la 
+                    stima iniziale della distanza dell'oggetto. <br>
+                    Sfruttando questa libreria è stato infine possibile testarla con una semplice operazione di pick and 
+                    place utilizzando un robot industriale a 6 assi. <br>
+                    Si è quindi calcolata la trasformata tra il sistema di riferimento oggetto e il sistema di riferimento 
+                    robot così da ottenere le rotazioni e le traslazioni necessarie ad afferrare l'oggetto.
+                </p>
             </section>
+
+
             <section class="sezione" id="sezione-robot">
                 <img src="resources/img/robotstudio.jpg" alt="robotstudio">
                 <h1>Linea di produzione automatica</h1>
@@ -103,12 +142,24 @@
                 <h3>Skills : 
                     <ul>
                         <li>RobotStudio</li>
-                        <li>ABB Rapid</li>
+                        <li>ABB RAPID</li>
                         <li>Solidworks</li>
+                        <li>LeanCost</li>
                     </ul>
                 </h3>
-                <p>Descrizione progetto</p>
+                <p>
+                    Descrizione progetto : <br>
+                    Costruzione simulata di un'intera linea di produzione e verniciatura per quadri di arredo in metallo.
+                    Il progetto riguarda la produzione su commissione di design personalizzati di ritagli su metallo 
+                    eseguiti da robot industriali a 6 assi e successiva verniciatura. <br>
+                    Si sono prodotti i disegni al CAD con Solidworks da introdurre nel workspace e successivamente si sono 
+                    stimati i tempi e i costi di produzione sia del prodotto che delle apparecchiature necessarie alla produzione. <br>
+                    Le tempistiche sono state riportate all'interno di Robotstudio simulando un'intero ciclo di processo produttivo 
+                    e scrivendo il software per i Robot ABB utilizzando il linguaggio proprietario RAPID.
+                </p>
             </section>
+
+
             <section class="sezione" id="sezione-web">
                 <img src="resources/img/webdevelopment.jpg" alt="web">
                 <h1>Sito web personale</h1>
@@ -121,7 +172,15 @@
                         <li>Git - Github</li>
                     </ul>
                 </h3>
-                <p>Descrizione progetto</p>
+                <p>
+                    Descrizione progetto : <br>
+                    Primo progetto di sviluppo software per siti web commissionato dall'Accademia CODE per ottenere il 
+                    Master in Full Stack Development. <br>
+                    L'obiettivo è quello di creare una copertina della mia figura professionale presentando, anche con successivi 
+                    sviluppi, le mie competenze professionali a possibili clienti o aziende. <br>
+                    Per il momento il sito è costruito interamente usando i linguaggi HTML e CSS con un piccolo script in Javascipt. <br>
+                    Ulteriori aggiornamenti in arrivo...
+                </p>
             </section>
         </main>
         <footer id="contatti">
