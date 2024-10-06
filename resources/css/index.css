@@ -572,6 +572,7 @@ footer p, footer a {
     font-size: 1.25rem;
     color: white;
     transition: all 1s;
+    text-align: center;
 }
 
 footer a:hover {
