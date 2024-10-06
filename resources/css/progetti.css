@@ -1,0 +1,99 @@
+.sezione{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 90vh;
+    padding: 5vh 0px;
+}
+
+.sezione img, .sezione div{
+    max-width: 45%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.sezione .descrizione{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sezione div h1, .sezione div h2{
+    text-align: center;
+}
+
+#sezione-pic{
+    background: linear-gradient(white 0%, white 40%, rgb(255, 82, 82) 50%, white 60%, white 100%);
+}
+
+#sezione-rasp{
+    background: linear-gradient(white 0%, white 40%, green 50%, white 60%, white 100%);
+}
+
+#sezione-vision{
+    background: linear-gradient(white 0%, white 40%, yellow 50%, white 60%, white 100%);
+}
+
+#sezione-robot{
+    background: linear-gradient(white 0%, white 40%, blueviolet 50%, white 60%, white 100%);
+}
+
+#sezione-web{
+    background: linear-gradient(white 0%, white 40%, rgb(0, 0, 236) 50%, white 60%, white 100%);
+}
+
+
+
+@media (max-width: 1100px), only screen and (min-resolution: 2dppx){
+    .sezione{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        min-height: 0vh;
+    }
+
+    .sezione div h1{
+        font-size: 1.5rem;
+    }
+
+    .sezione div h2{
+        font-size: 1.25rem;
+    }
+
+    .sezione img, .sezione div{
+        max-width: 90%;
+    }
+
+    #sezione-pic{
+        background: none;
+        background-color: white;
+        border-bottom: 5px solid red;
+    }
+    
+    #sezione-rasp{
+        background: none;
+        background-color: white;
+        border-bottom: 5px solid green;
+    }
+    
+    #sezione-vision{
+        background: none;
+        background-color: white;
+        border-bottom: 5px solid yellow;
+    }
+    
+    #sezione-robot{
+        background: none;
+        background-color: white;
+        border-bottom: 5px solid blueviolet;
+    }
+    
+    #sezione-web{
+        background: none;
+        background-color: white;
+        border-bottom: 5px solid darkblue;
+    }
+}
