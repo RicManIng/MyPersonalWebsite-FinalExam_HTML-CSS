@@ -1,0 +1,870 @@
+/* Stili Globali */
+:root {
+    --primary-color: rgb(190, 236, 254);
+    --secondary-color: darkblue;
+    --hover-color: rgb(0, 0, 93);
+    --text-color: black;
+    --border-color: black;
+}
+
+body, a, * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Stili Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    z-index: 3;
+    overflow: visible;
+}
+
+/* Nascondi l'input checkbox */
+#dropdown-list-tag input[type="checkbox"] {
+    display: none;
+}
+
+/* Stile per l'etichetta dell'icona hamburger */
+#dropdown-list-tag label {
+    display: none; /* Sarà mostrata nella media query */
+    height: 10vh;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#dropdown-list-tag label i {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu a tendina nascosto di default */
+#dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 0vh;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 4;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+/* Apri il menu quando il checkbox è selezionato */
+#dropdown-list-tag input[type="checkbox"]:checked ~ #dropdown-menu {
+    height: 70vh;
+}
+
+/* Mantieni gli altri stili esistenti */
+#dropdown-menu li {
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#dropdown-menu li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#dropdown-menu #newsletter-container-drop {
+    background-color: var(--secondary-color);
+}
+
+#dropdown-menu #newsletter-container-drop a {
+    color: white;
+}
+
+header div:last-child {
+    padding-right: 3vw;
+}
+
+header div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 0;
+}
+
+header div ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header div ul li:hover {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+header div ul li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#header-img {
+    height: 100%;
+}
+
+select {
+    height: 33%;
+    width: 45px;
+    margin: 0 auto;
+}
+
+#newsletter {
+    height: 50%;
+    padding: 0 10px;
+    background-color: blue;
+    color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#newsletter:hover {
+    background-color: var(--hover-color);
+}
+
+#newsletter-container {
+    background: none;
+    padding-right: 20px;
+}
+
+/* Stili Main */
+main {
+    margin-top: 10vh;
+}
+
+/* Stili Sezione "Chi sono" */
+#chi-sono {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vh 0;
+}
+
+#chi-sono img, #chi-sono div {
+    width: 30%;
+    min-width: 300px;
+    max-height: 80vh;
+}
+
+#chi-sono img {
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#chi-sono div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 10px;
+}
+
+#chi-sono div h1, #chi-sono div a {
+    text-align: center;
+}
+
+#chi-sono div a {
+    padding: 10px;
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px var(--border-color);
+    transition: all 0.5s;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+#chi-sono div a:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    color: white;
+    background-color: var(--secondary-color);
+    box-shadow: none;
+}
+
+#chi-sono p {
+    font-size: 1.25rem;
+}
+
+/* Stili Sezione Video Promo */
+#promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+    background-color: rgb(0, 0, 73);
+    width: 100%;
+}
+
+#promo video {
+    width: 70%;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+}
+
+/* Stili Sezione "Studi" */
+#studi {
+    background-image: url('../img/laurea.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 10vh 0;
+    height: 90vh;
+}
+
+#studi div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    min-width: 400px;
+    margin-left: 10vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#studi h1, #studi p, #studi a {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#studi p, #studi a {
+    font-size: 1.25rem;
+}
+
+#studi a {
+    padding: 8px 15px;
+    background-color: lightblue;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#studi a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Stili Sezione "Esperienze" */
+#esperienze {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    padding: 0px 0px 3vh 0px;
+}
+
+#esperienze-wildcards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+}
+
+.wildcard-esperienze {
+    width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.wildcard-esperienze h2 {
+    text-align: center;
+}
+
+.wildcard-esperienze img {
+    width: 100%;
+}
+
+#esperienze a {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: var(--secondary-color);
+    border-radius: 20px;
+    border: 2px solid var(--border-color);
+    box-shadow: 2px 2px var(--border-color);
+    transition: all 0.5s;
+    font-size: 1.25rem;
+    max-width: 80%;
+    text-align: center;
+}
+
+#esperienze a:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: none;
+}
+
+/* Titoli Sezioni */
+.titolo {
+    width: 100%;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+/* Stili Sezione "Progetti" */
+#progetti {
+    display: grid;
+    min-height: 70vh;
+    grid-template-columns: repeat(5, 1fr);
+    transition: all 1s;
+}
+
+.progetti-wildcard {
+    height: 100%;
+    width: 200%;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.progetti-wildcard:hover {
+    width: 100%;
+}
+
+/* Effetto al passaggio del mouse su ciascuna wildcard */
+#pic:hover ~ .progetti-wildcard {
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+}
+
+#raspberry:hover ~ .progetti-wildcard {
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+}
+
+#cv:hover ~ .progetti-wildcard {
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+}
+
+#robotstudio:hover ~ .progetti-wildcard {
+    grid-template-columns: 1fr 1fr 1fr 4fr 1fr;
+}
+
+#webdev:hover ~ .progetti-wildcard {
+    grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+}
+
+/* Ripristina la griglia quando non c'è hover */
+#progetti:hover {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Dimensioni del testo che cambiano */
+.progetti-wildcard h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 1s;
+    width: 50%;
+}
+
+.progetti-wildcard:hover h2 {
+    font-size: 3rem;
+}
+
+/* Contenuto delle wildcard */
+.progetti-wildcard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    width: 50%;
+}
+
+.progetti-wildcard div h3, .progetti-wildcard div h4 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.progetti-wildcard div a {
+    padding: 8px 15px;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.progetti-wildcard div a:hover {
+    color: white;
+    background-color: blue;
+}
+
+/* Background specifici per le wildcard */
+#pic {
+    background-image: url('../img/pic32-maxi-web.jpg');
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+#raspberry {
+    background-image: url('../img/rasppi.jpg');
+    background-color: rgba(0, 100, 0, 0.8);
+}
+
+#cv {
+    background-image: url('../img/visionsystem.avif');
+    background-color: rgba(255, 140, 0, 0.8);
+}
+
+#robotstudio {
+    background-image: url('../img/robotstudio.jpg');
+    background-color: rgba(139, 0, 139, 0.8);
+}
+
+#webdev {
+    background-image: url('../img/webdevelopment.jpg');
+    background-color: rgba(0, 0, 139, 0.8);
+}
+
+/* Stili Sezione "Attività" */
+#attivita {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    border-top: 1px solid black;
+}
+
+#attivita .container {
+    flex: 1;
+    height: 200%;
+    transition: height 1s ease;
+}
+
+#attivita .container:hover {
+    height: 100%;
+}
+
+/* Container Maghreb */
+#maghreb {
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../img/sfondo-maghreb.jpeg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid black;
+    transition: background-color 1s ease;
+}
+
+#maghreb:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Container CherryBytes */
+#cherrybytes {
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../img/cyber-2377718_1280.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 1s ease;
+}
+
+#cherrybytes:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Stili per Image e Content */
+.image, .content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-height: 100%;
+}
+
+.content {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.content a {
+    width: 20%;
+    padding: 5px;
+    background-color: lightblue;
+    color: darkblue;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+    font-size: 1.25rem;
+    transition: all 1s ease;
+}
+
+.content a:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+    background-color: darkblue;
+    color: lightblue;
+}
+
+/* Stili Footer */
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+footer .footer-col {
+    width: 30%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4vh;
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+footer p, footer a {
+    font-size: 1.25rem;
+    color: white;
+    transition: all 1s;
+    text-align: center;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer form input, footer form textarea, footer form select {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+footer form select {
+    padding: 8px 10px;
+}
+
+#telefono {
+    padding: 0px 10px;
+}
+
+footer form input, footer form div, footer form textarea {
+    margin-bottom: 3vh;
+}
+
+footer form div input, footer form div select {
+    margin: 0px;
+    height: 100%;
+}
+
+footer form div select {
+    width: 35%;
+}
+
+footer form div input {
+    width: 58%;
+}
+
+footer label {
+    color: white;
+    font-size: 1.25rem;
+}
+
+form input:placeholder-shown, form textarea:placeholder-shown {
+    background-color: rgb(184, 184, 184);
+    transition: all 0.5s;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: rgb(78, 78, 78);
+    transition: all 0.5s;
+}
+
+form .bottoni input {
+    width: 45%;
+}
+
+form .bottoni input:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#annulla:hover {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+#invia {
+    background-color: rgb(94, 94, 253);
+    color: black;
+}
+
+#invia:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+form input:hover, form textarea:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+form input:hover::placeholder, form textarea:hover::placeholder {
+    color: white;
+}
+
+form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
+    background-color: white;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 1300px), only screen and (min-resolution: 2dppx) {
+    .progetti-wildcard:hover h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1100px), only screen and (min-resolution: 2dppx) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-col {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    footer h2 {
+        width: 300%;
+        text-align: center;
+    }
+
+    #telefono {
+        padding: 8px 10px;
+    }
+
+    .container:hover .image {
+        height: 35%;
+    }
+
+    .container:hover .content {
+        height: 65%;
+    }
+
+    .content a {
+        width: 70%;
+    }
+
+    .titolo {
+        padding: 2vh 0px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #studi {
+        justify-content: center;
+    }
+
+    #studi div {
+        margin-left: 0px;
+        min-width: 0px;
+        max-width: 80%;
+        padding: none;
+    }
+
+    #studi p, #studi a {
+        font-size: 1rem;
+    }
+
+    #esperienze {
+        height: auto;
+    }
+
+    #esperienze-wildcards {
+        flex-direction: column;
+        justify-content: center;
+        gap: 8vh;
+        align-items: center;
+    }
+
+    .content p, .content a {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    #progetti {
+        min-height: 200vh;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+
+    .progetti-wildcard h2 {
+        font-size: 1.5rem;
+    }
+
+    .progetti-wildcard:hover h2 {
+        font-size: 1.5rem;
+    }
+
+    .progetti-wildcard div h3, .progetti-wildcard div h4 {
+        font-size: 1.2rem;
+    }
+
+    .progetti-wildcard div a {
+        font-size: 1rem;
+    }
+
+    #chi-sono p, #chi-sono div a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px), only screen and (min-resolution: 2dppx) {
+    header .no-drop {
+        display: none;
+    }
+
+    /* Mostra l'icona hamburger */
+    #dropdown-list-tag label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header div {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    /* Eventuali altri aggiustamenti per schermi piccoli */
+    #chi-sono {
+        background-image: url('../img/foto.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #chi-sono img {
+        display: none;
+    }
+
+    #chi-sono div {
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5%;
+        border-radius: 20px;
+    }
+
+    #chi-sono p, #chi-sono h1 {
+        color: white;
+    }
+
+    #promo video {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+
+    #promo {
+        background-color: black;
+    }
+
+    #attivita {
+        height: 60vh;
+    }
+}

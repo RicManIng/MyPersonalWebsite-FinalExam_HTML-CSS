@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingegnere Riccardo Mancinelli</title>
+    <link rel="stylesheet" href="resources/css/index2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li><a href="#promo" title="vai al video promo"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a></li>
+                <li class="no-drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
+                <li class="no-drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
+                <li class="no-drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
+                <li class="no-drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
+                <li class="no-drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
+                <li class="no-drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li id="dropdown-list-tag">
+                    <!-- Input checkbox per controllare il menu -->
+                    <input type="checkbox" id="menu-toggle">
+                    <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
+                    <label for="menu-toggle"><i class="fas fa-bars"></i></label>
+                    <!-- Il menu a tendina -->
+                    <ul id="dropdown-menu">
+                        <li class="drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
+                        <li class="drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
+                        <li class="drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
+                        <li class="drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
+                        <li class="drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
+                        <li class="drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
+                        <li class="drop" id="newsletter-container-drop"><a href="#" title="iscriviti alla mia newsletter" id="newsletter-drop">Iscriviti alla newsletter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
+                <li>
+                    <select id="language" name="language">
+                        <option value="it" selected>ita</option>
+                        <option value="en">eng</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="chi-sono">
+            <img src="resources/img/foto.jpeg" alt="Foto di Riccardo Mancinelli, ingegnere meccatronico">
+            <div>
+                <h1>Chi sono?</h1>
+                <p>Mi chiamo <strong>Riccardo Mancinelli</strong>, sono un ingegnere meccatronico appassionato di <em>sistemi embedded</em>, <em>robotica</em> e <em>programmazione</em>.</p>
+                <p>Nell'ultimo periodo mi sto avvicinando al mondo della <em>programmazione Web</em> per sviluppare sistemi IoT complessi sia lato hardware che lato software.</p>
+                <a href="#promo" title="guarda le mie informazioni personali">Scopri di più su di me!</a>
+            </div>
+        </section>
+
+        <section id="promo">
+            <video src="resources/video/video-promo1.mp4" controls></video>
+        </section>
+
+        <section id="studi">
+            <div>
+                <h1>Percorso Accademico</h1>
+                <p>Ho conseguito un diploma tecnico nel settore meccanico e una laurea magistrale in ingegneria meccatronica, ottenendo il massimo dei voti.</p>
+                <a href="#" title="vedi le informazioni riguardanti il mio percorso di studi">Guarda i miei studi</a>
+            </div>
+        </section>
+        <h1 class="titolo">Esperienze lavorative</h1>
+        <section id="esperienze">
+            <div id="esperienze-wildcards">
+                <div class="wildcard-esperienze">
+                    <img src="resources/img/elettr-logo.png" alt="Logo Elettrosw">
+                    <h2>PLC Software Engineer</h2>
+                    <h3>10/2021 - 11/2021</h3>
+                </div>
+                <div class="wildcard-esperienze">
+                    <img src="resources/img/kloo-logo.png" alt="Logo Kloops">
+                    <h2>Software Engineer</h2>
+                    <h3>12/2021 - 08/2022</h3>
+                </div>
+                <div class="wildcard-esperienze">
+                    <img src="resources/img/zapi-logo.png" alt="Logo Zapi">
+                    <h2>Test Engineer</h2>
+                    <h3>10/2022 - oggi</h3>
+                </div>
+            </div>
+            <a href="#" title="vai ai dettagli sulle mansioni ricoperte">Guarda nel dettaglio la carriera lavorativa</a>
+        </section>
+
+        <h1 class="titolo">Progetti</h1>
+        <section id="progetti">
+            <div class="progetti-wildcard" id="pic">
+                <h2>Controllore banco test</h2>
+                <div>
+                    <h3>Sistema embedded - C</h3>
+                    <h4>2023 - 2024</h4>
+                    <a href="progetti.html#sezione-pic">Vai ai progetti</a>
+                </div>
+            </div>
+            <div class="progetti-wildcard" id="raspberry">
+                <h2>Sistema Hardware in the Loop</h2>
+                <div>
+                    <h3>Sistema embedded - Python</h3>
+                    <h4>2023 - 2024</h4>
+                    <a href="progetti.html#sezione-rasp">Vai ai progetti</a>
+                </div>
+            </div>
+            <div class="progetti-wildcard" id="cv">
+                <h2>Pick and Place</h2>
+                <div>
+                    <h3>Programmazione Robot KRL - Python</h3>
+                    <h4>2023</h4>
+                    <a href="progetti.html#sezione-vision">Vai ai progetti</a>
+                </div>
+            </div>
+            <div class="progetti-wildcard" id="robotstudio">
+                <h2>Linea automatica di produzione</h2>
+                <div>
+                    <h3>Programmazione Robot ABB - Solidworks</h3>
+                    <h4>2022</h4>
+                    <a href="progetti.html#sezione-robot">Vai ai progetti</a>
+                </div>
+            </div>
+            <div class="progetti-wildcard" id="webdev">
+                <h2>Sviluppo sito Web personale</h2>
+                <div>
+                    <h3>HTML - CSS</h3>
+                    <h4>2024</h4>
+                    <a href="progetti.html#sezione-web">Vai ai progetti</a>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="titolo">Attività</h1>
+        <section id="attivita">
+            <div class="container" id="cherrybytes">
+                <div class="image">
+                    <img src="resources/img/cherry-logo-removebg.png" alt="Logo CherryBytes">
+                </div>
+                <div class="content">
+                    <p>CherryBytes sviluppa strumentazioni di test modulari e flessibili per il settore Automotive.</p>
+                    <a href="https://www.cherrybytes.it/" title="vai al sito di CherryBytes">Vai al sito</a>
+                </div>
+            </div>
+            <div class="container" id="maghreb">
+                <div class="image">
+                    <img src="resources/img/maghreb-logo.png" alt="Logo Maghreb Cosmetics">
+                </div>
+                <div class="content">
+                    <p>Maghreb Cosmetics nasce dalla passione per i prodotti di cura personale marocchini, portandoli in Italia e in Europa.</p>
+                    <a href="#" title="vai al sito di Maghreb Cosmetics">Vai al sito</a>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <footer id="contatti">
+        <div class="footer-col">
+            <h2>Richiedi informazioni</h2>
+            <form action="http://www.riccardomancinelli.com/prenotazioni.php" method="get">
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="name" placeholder="inserisci il tuo Nome" required maxlength="30">
+                <label for="surname">Cognome:</label>
+                <input type="text" name="cognome" id="surname" placeholder="inserisci il tuo Cognome" required maxlength="30">
+                <label for="telefono">Cellulare:</label>
+                <div>
+                    <select id="phone-prefix" name="phone-prefix">
+                        <option value="+1">🇺🇸 +1 Stati Uniti</option>
+                        <option value="+44">🇬🇧 +44 Regno Unito</option>
+                        <option value="+39" selected>🇮🇹 +39 Italia</option>
+                        <option value="+33">🇫🇷 +33 Francia</option>
+                        <option value="+49">🇩🇪 +49 Germania</option>
+                        <option value="+34">🇪🇸 +34 Spagna</option>
+                        <option value="+81">🇯🇵 +81 Giappone</option>
+                    </select>
+                    <input type="tel" id="telefono" name="telefono" minlength="10" maxlength="15" required placeholder="Inserisci il tuo numero di telefono">
+                </div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="inserisci la tua e-mail" required>
+                <label for="msg">Messaggio:</label>
+                <textarea name="messaggio" id="msg" rows="10" cols="40" placeholder="lascia il tuo messaggio"></textarea>
+                <div class="bottoni">
+                    <input type="reset" value="Annulla" id="annulla">
+                    <input type="submit" value="Invia" id="invia">
+                </div>
+            </form>
+        </div>
+        <div class="footer-col">
+            <h2>Contatti</h2>
+            <p>Email: <a href="mailto:ric.man@virgilio.it">ric.man@virgilio.it</a></p>
+            <p>Telefono: <a href="tel:+393491011109">+39 3491011109</a></p>
+            <p>&copy; 2024 Riccardo Mancinelli. Tutti i diritti riservati.</p>
+            <a href="#">Termini di servizio</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+            <h2>Vienimi a trovare</h2>
+            <p>via Parma 59, Poviglio (RE)</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.9845707448185!2d10.527066576106797!3d44.842247571070615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47803d198d3b02d9%3A0x101db7f6ddc5c4e!2sVia%20Parma%2C%2059%2C%2042028%20Poviglio%20RE%2C%20Italia!5e0!3m2!1sit!2sie!4v1725647954215!5m2!1sit!2sie" 
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+        
+    <!-- <script>
+        window.onload = function() {
+            const pic = document.getElementById('pic');
+            const raspberry = document.getElementById('raspberry');
+            const cv = document.getElementById('cv');
+            const robotstudio = document.getElementById('robotstudio');
+            const webdev = document.getElementById('webdev');
+            const progetti = document.getElementById('progetti');
+            const mediaQuery = window.matchMedia("(max-width: 1100px), (min-resolution: 2dppx)");
+
+
+            if (!mediaQuery.matches){
+                pic.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '4fr 1fr 1fr 1fr 1fr';
+                });
+
+                raspberry.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 4fr 1fr 1fr 1fr';
+                });
+
+                cv.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 4fr 1fr 1fr';
+                });
+
+                robotstudio.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 4fr 1fr';
+                });
+
+                webdev.addEventListener('mouseover', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 4fr';
+                });
+
+                progetti.addEventListener('mouseleave', () => {
+                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr';
+                });
+            };
+        };
+    </script> -->
+</body>
+</html>
+        
