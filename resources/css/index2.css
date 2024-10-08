@@ -363,66 +363,43 @@ main {
 
 /* Stili Sezione "Progetti" */
 #progetti {
-    display: grid;
+    display: flex;
     min-height: 70vh;
     grid-template-columns: repeat(5, 1fr);
     transition: all 1s;
 }
 
 .progetti-wildcard {
-    height: 100%;
-    width: 200%;
+    min-height: 100%;
+    flex: 1;
     transition: all 1s;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-.progetti-wildcard:hover {
-    width: 100%;
-}
-
-/* Effetto al passaggio del mouse su ciascuna wildcard */
-#pic:hover ~ .progetti-wildcard {
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
-}
-
-#raspberry:hover ~ .progetti-wildcard {
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
-}
-
-#cv:hover ~ .progetti-wildcard {
-    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-}
-
-#robotstudio:hover ~ .progetti-wildcard {
-    grid-template-columns: 1fr 1fr 1fr 4fr 1fr;
-}
-
-#webdev:hover ~ .progetti-wildcard {
-    grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
-}
-
-/* Ripristina la griglia quando non c'è hover */
-#progetti:hover {
-    grid-template-columns: repeat(5, 1fr);
+.progetti-wildcard:hover{
+    flex: 3;
 }
 
 /* Dimensioni del testo che cambiano */
 .progetti-wildcard h2 {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: all 1s;
-    width: 50%;
+    width: 200%;
+    position:relative;
+    left: 25%;
 }
 
 .progetti-wildcard:hover h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    left: 0%;
 }
 
 /* Contenuto delle wildcard */
@@ -431,13 +408,22 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 5vh;
-    width: 50%;
+    width: 200%;
+    position: relative;
+    transition: all 1s;
+    left:50%;
 }
+
+/* Contenuto delle wildcard */
+.progetti-wildcard:hover div{
+    left: 0%;
+} 
 
 .progetti-wildcard div h3, .progetti-wildcard div h4 {
     color: white;
     font-size: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 
 .progetti-wildcard div a {
