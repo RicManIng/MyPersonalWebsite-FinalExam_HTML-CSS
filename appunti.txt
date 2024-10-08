@@ -1,3 +1,5 @@
+STEP 1
+
 Ciao Riccardo,
 ho guardato il tuo esame di prima sessione.
 
@@ -34,5 +36,18 @@ Non esitare a contattare l’assistenza se non dovessi riuscire in qualche passa
 
 
 
+Ciao
+Rino
+
+
+
+
+STEP 2 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ciao Riccardo,
+il tuo sito è migliorato tantissimo ma ha ancora dei piccoli problemi da sistemare. Prima di tutto non ti è concesso l'uso di Javascript in questa sessione... quindi tocca togliere ed adattare la funzionalità all'assenza di quel codice. Seconda cosa ma non meno importante, mi hai fatto un bel menu ad hamburger, perccato che hai usato l'hack della checkbox che su un sito single page non funziona bene... meglio era usare l'hack del :target (in tips & tricks li mostro tutti e 2 e ne descrivo il funzionamento)
+Poi mi hai inserito 2 menu... se lavori bene non servono. Ne basta uno. Graficamente è mooolto migliorato sia come gestione degli spazi che dei testi. Ti consiglio solo di rendere meno invasivi quei gradienti che hai messo qua e la... ammorbidiscili un po.
+Aspetto che mi rimandi il tutto...  :) sei sulla via corretta :)
 Ciao
 Rino
