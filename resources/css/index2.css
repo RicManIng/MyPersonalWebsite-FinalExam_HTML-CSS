@@ -137,6 +137,7 @@ header div ul li a {
     display: flex;
     align-items: center;
     padding: 0 10px;
+    font-size: 1.15rem;
 }
 
 #header-img {
@@ -769,9 +770,15 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
     }
 
     #progetti {
-        min-height: 200vh;
+        /* min-height: 200vh;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%; */
+        flex-direction: column;
+        min-height: 150vh;
+    }
+
+    .progetti-wildcard{
+        height: 50vh;
     }
 
     .progetti-wildcard h2 {
