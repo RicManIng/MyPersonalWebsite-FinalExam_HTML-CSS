@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù Hamburger con CSS :target</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Icona dell'hamburger */
+        #menu-toggle {
+            font-size: 30px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Contenitore del menù */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 200px;
+            height: 100%;
+            background: #333;
+            color: white;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        /* Quando il menù diventa il target, lo spostiamo a sinistra */
+        #menu:target {
+            left: 0;
+        }
+
+        /* Link per chiudere il menù */
+        #menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        #menu-close {
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Link per aprire il menù -->
+    <a href="#menu" id="menu-toggle">☰</a>
+
+    <!-- Menù a comparsa -->
+    <div id="menu">
+        <a href="#" id="menu-close">&times; Chiudi</a>
+        <a href="#">Home</a>
+        <a href="#">Chi siamo</a>
+        <a href="#">Servizi</a>
+        <a href="#">Contatti</a>
+    </div>
+
+</body>
+</html>
