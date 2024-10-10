@@ -41,113 +41,52 @@ header {
     overflow: visible;
 }
 
-/* Nascondi l'input checkbox */
-#dropdown-list-tag input[type="checkbox"] {
+.home-img{
+    max-height: 100%;
+}
+
+.home-img img{
+    height: 100%;
+}
+
+.center-container{
+    max-width: 50%;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    gap: 2%;
+}
+
+.hamb-button{
     display: none;
-}
-
-/* Stile per l'etichetta dell'icona hamburger */
-#dropdown-list-tag label {
-    display: none; /* Sarà mostrata nella media query */
-    height: 10vh;
-    width: 20vw;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#dropdown-list-tag label i {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Menu a tendina nascosto di default */
-#dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 0vh;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    z-index: 4;
-    overflow: hidden;
-    transition: height 0.5s;
-}
-
-/* Apri il menu quando il checkbox è selezionato */
-#dropdown-list-tag input[type="checkbox"]:checked ~ #dropdown-menu {
-    height: 70vh;
-}
-
-/* Mantieni gli altri stili esistenti */
-#dropdown-menu li {
-    height: 20vh;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
-}
-
-#dropdown-menu li a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-
-#dropdown-menu #newsletter-container-drop {
-    background-color: var(--secondary-color);
-}
-
-#dropdown-menu #newsletter-container-drop a {
-    color: white;
-}
-
-header div:last-child {
-    padding-right: 3vw;
-}
-
-header div ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    list-style: none;
-    gap: 0;
-}
-
-header div ul li {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-header div ul li:hover {
-    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-}
-
-header div ul li a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 1.15rem;
-}
-
-#header-img {
-    height: 100%;
 }
 
 select {
     height: 33%;
     width: 45px;
     margin: 0 auto;
+}
+
+header .right-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 2vw;
+    align-items: center;
+}
+
+header .right-container li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .right-container li a{
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 #newsletter {
@@ -803,27 +742,6 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
 }
 
 @media (max-width: 900px), only screen and (min-resolution: 2dppx) {
-    header .no-drop {
-        display: none;
-    }
-
-    /* Mostra l'icona hamburger */
-    #dropdown-list-tag label {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header div {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-    }
-
-    header {
-        justify-content: space-evenly;
-    }
-
     /* Eventuali altri aggiustamenti per schermi piccoli */
     #chi-sono {
         background-image: url('../img/foto.jpeg');

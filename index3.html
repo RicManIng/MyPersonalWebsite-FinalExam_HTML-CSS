@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingegnere Riccardo Mancinelli</title>
-    <link rel="stylesheet" href="resources/css/index2.css">
+    <link rel="stylesheet" href="resources/css/index3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -12,16 +12,14 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="#promo" title="vai al video promo"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a></li>
-            <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
-            <li>
-                <label for="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                    <i class="fa-solid fa-x"></i>
-                </label>
-            </li>
-            <ul>
+        <a href="#promo" title="vai al video promo" class="home-img"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a>
+        <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
+        <div class="center-container">
+            <div class="hamb-button">
+                <i class="fas fa-bars"></i>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <ul class="menu">
                 <li class="no-drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
                 <li class="no-drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
                 <li class="no-drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
@@ -29,15 +27,15 @@
                 <li class="no-drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
                 <li class="no-drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
             </ul>
-            <ul>
-                <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
-                <li>
-                    <select id="language" name="language">
-                        <option value="it" selected>ita</option>
-                        <option value="en">eng</option>
-                    </select>
-                </li>
-            </ul>
+        </div>
+        <ul class="right-container">
+            <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
+            <li>
+                <select id="language" name="language">
+                    <option value="it" selected>ita</option>
+                    <option value="en">eng</option>
+                </select>
+            </li>
         </ul>
     </header>
 
