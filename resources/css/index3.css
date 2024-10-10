@@ -28,171 +28,153 @@ h1 {
     display: none;
 }
 
-/* Header */
+/* Stili Header */
 header {
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
     width: 100%;
+    position: fixed;
     background-color: var(--primary-color);
     border-bottom: 2px solid var(--secondary-color);
-    z-index: 1000;
+    z-index: 3;
+    overflow: visible;
 }
 
-.header-container {
+/* Nascondi l'input checkbox */
+#dropdown-list-tag input[type="checkbox"] {
+    display: none;
+}
+
+/* Stile per l'etichetta dell'icona hamburger */
+#dropdown-list-tag label {
+    display: none; /* Sarà mostrata nella media query */
+    height: 10vh;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#dropdown-list-tag label i {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 10vh;
+    justify-content: center;
 }
 
-#header-img {
-    height: 10%;
-}
-
-nav#menu {
+/* Menu a tendina nascosto di default */
+#dropdown-menu {
     display: flex;
-    transition: transform 0.3s ease;
+    flex-direction: column;
+    width: 100vw;
+    height: 0vh;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 4;
+    overflow: hidden;
+    transition: height 0.5s;
 }
 
-nav#menu ul {
+/* Apri il menu quando il checkbox è selezionato */
+#dropdown-list-tag input[type="checkbox"]:checked ~ #dropdown-menu {
+    height: 70vh;
+}
+
+/* Mantieni gli altri stili esistenti */
+#dropdown-menu li {
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#dropdown-menu li a {
+    height: 100%;
+    width: 100%;
     display: flex;
-    list-style: none;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
-nav#menu ul li a {
-    padding: 10px;
-    font-size: 1rem;
-    color: var(--text-color);
-}
-
-nav#menu ul li a:hover {
+#dropdown-menu #newsletter-container-drop {
     background-color: var(--secondary-color);
+}
+
+#dropdown-menu #newsletter-container-drop a {
     color: white;
 }
 
-#language-selector select {
+header div:last-child {
+    padding-right: 3vw;
+}
+
+header div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 0;
+}
+
+header div ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header div ul li:hover {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+header div ul li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.15rem;
+}
+
+#header-img {
+    height: 100%;
+}
+
+select {
     height: 33%;
     width: 45px;
     margin: 0 auto;
 }
 
-#hamburger, #close-menu {
-    display: none;
-    font-size: 2rem;
-    color: var(--text-color);
+#newsletter {
+    height: 50%;
+    padding: 0 10px;
+    background-color: blue;
+    color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Menu mobile nascosto di default */
-nav#menu {
-    transition: transform 0.3s ease;
+#newsletter:hover {
+    background-color: var(--hover-color);
 }
 
-@media (max-width: 900px) {
-    /* Nascondi il menu desktop */
-    nav#menu {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(0);
-    }
-
-    nav#menu ul {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    nav#menu ul li a {
-        font-size: 2rem;
-        color: white;
-    }
-
-    nav#menu ul li a:hover {
-        color: var(--primary-color);
-    }
-
-    /* Mostra il menu quando è attivato il target */
-    :target #menu {
-        left: 0;
-        transform: translateX(0%);
-    }
-
-    /* Nascondi il menu quando non è attivato il target */
-    nav#menu:not(:target) {
-        left: -100%;
-    }
-
-    /* Mostra l'icona hamburger */
-    #hamburger {
-        display: block;
-    }
-
-    /* Nascondi l'icona di chiusura */
-    #close-menu {
-        display: none;
-    }
-
-    /* Mostra l'icona per chiudere il menu quando il menu è aperto */
-    :target #close-menu {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-        color: white;
-    }
-
-    /* Nascondi l'icona hamburger quando il menu è aperto */
-    :target #hamburger {
-        display: none;
-    }
-
-    /* Nascondi il selettore della lingua quando il menu è aperto */
-    :target #language-selector {
-        display: none;
-    }
+#newsletter-container {
+    background: none;
+    padding-right: 20px;
 }
 
-@media (min-width: 901px) {
-    /* Ripristina le proprietà del menu per la visualizzazione desktop */
-    nav#menu {
-        position: static;
-        left: 0;
-        height: auto;
-        background-color: transparent;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        transform: translateX(0);
-    }
-
-    nav#menu ul {
-        flex-direction: row;
-    }
-
-    nav#menu ul li a {
-        font-size: 1rem;
-        color: var(--text-color);
-    }
-
-    /* Nascondi le icone hamburger e close-menu */
-    #hamburger, #close-menu {
-        display: none;
-    }
-}
-
-/* Main */
+/* Stili Main */
 main {
     margin-top: 10vh;
 }
 
-/* Sezione "Chi sono" */
+/* Stili Sezione "Chi sono" */
 #chi-sono {
     display: flex;
     justify-content: space-evenly;
@@ -246,7 +228,7 @@ main {
     font-size: 1.25rem;
 }
 
-/* Sezione Video Promo */
+/* Stili Sezione Video Promo */
 #promo {
     display: flex;
     justify-content: center;
@@ -262,7 +244,7 @@ main {
     border-radius: 20px;
 }
 
-/* Sezione "Studi" */
+/* Stili Sezione "Studi" */
 #studi {
     background-image: url('../img/laurea.jpeg');
     background-size: cover;
@@ -310,7 +292,7 @@ main {
     color: white;
 }
 
-/* Sezione "Esperienze" */
+/* Stili Sezione "Esperienze" */
 #esperienze {
     height: 70vh;
     display: flex;
@@ -380,10 +362,11 @@ main {
     text-align: center;
 }
 
-/* Sezione "Progetti" */
+/* Stili Sezione "Progetti" */
 #progetti {
     display: flex;
     min-height: 70vh;
+    grid-template-columns: repeat(5, 1fr);
     transition: all 1s;
 }
 
@@ -400,7 +383,7 @@ main {
     overflow: hidden;
 }
 
-.progetti-wildcard:hover {
+.progetti-wildcard:hover{
     flex: 4;
 }
 
@@ -411,7 +394,7 @@ main {
     text-align: center;
     transition: all 1s;
     width: 200%;
-    position: relative;
+    position:relative;
     left: 25%;
 }
 
@@ -429,12 +412,13 @@ main {
     width: 200%;
     position: relative;
     transition: all 1s;
-    left: 50%;
+    left:50%;
 }
 
-.progetti-wildcard:hover div {
+/* Contenuto delle wildcard */
+.progetti-wildcard:hover div{
     left: 0%;
-}
+} 
 
 .progetti-wildcard div h3, .progetti-wildcard div h4 {
     color: white;
@@ -482,7 +466,7 @@ main {
     background-color: rgba(0, 0, 139, 0.8);
 }
 
-/* Sezione "Attività" */
+/* Stili Sezione "Attività" */
 #attivita {
     display: flex;
     height: 90vh;
@@ -576,7 +560,7 @@ main {
     color: lightblue;
 }
 
-/* Footer */
+/* Stili Footer */
 footer {
     background-color: black;
     display: flex;
@@ -786,8 +770,15 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
     }
 
     #progetti {
-        min-height: 200vh;
+        /* min-height: 200vh;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20% 20% 20% 20% 20%; */
         flex-direction: column;
+        min-height: 150vh;
+    }
+
+    .progetti-wildcard{
+        height: 50vh;
     }
 
     .progetti-wildcard h2 {
@@ -812,7 +803,26 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
 }
 
 @media (max-width: 900px), only screen and (min-resolution: 2dppx) {
-    /* Già gestito nelle regole precedenti per il menu */
+    header .no-drop {
+        display: none;
+    }
+
+    /* Mostra l'icona hamburger */
+    #dropdown-list-tag label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header div {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
 
     /* Eventuali altri aggiustamenti per schermi piccoli */
     #chi-sono {
