@@ -72,6 +72,7 @@ header {
 
 .menu li a{
     padding: 0px 10px;
+    transition: all 0.5s ease;
 }
 
 .menu li a:hover{
@@ -759,6 +760,10 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
     #chi-sono p, #chi-sono div a {
         font-size: 1rem;
     }
+
+    #esperienze a{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 900px), only screen and (min-resolution: 2dppx) {
@@ -798,4 +803,5 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
     #attivita {
         height: 60vh;
     }
+
 }
