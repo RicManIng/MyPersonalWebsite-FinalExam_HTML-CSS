@@ -12,9 +12,16 @@
 </head>
 <body>
     <header>
-        <div>
+        <ul>
+            <li><a href="#promo" title="vai al video promo"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a></li>
+            <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
+            <li>
+                <label for="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+            </li>
             <ul>
-                <li><a href="#promo" title="vai al video promo"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a></li>
                 <li class="no-drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
                 <li class="no-drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
                 <li class="no-drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
@@ -22,28 +29,6 @@
                 <li class="no-drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
                 <li class="no-drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
             </ul>
-        </div>
-        <div>
-            <ul>
-                <li id="dropdown-list-tag">
-                    <!-- Input checkbox per controllare il menu -->
-                    <input type="checkbox" id="menu-toggle">
-                    <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
-                    <label for="menu-toggle"><i class="fas fa-bars"></i></label>
-                    <!-- Il menu a tendina -->
-                    <ul id="dropdown-menu">
-                        <li class="drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
-                        <li class="drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
-                        <li class="drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
-                        <li class="drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
-                        <li class="drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
-                        <li class="drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
-                        <li class="drop" id="newsletter-container-drop"><a href="#" title="iscriviti alla mia newsletter" id="newsletter-drop">Iscriviti alla newsletter</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div>
             <ul>
                 <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
                 <li>
@@ -53,7 +38,7 @@
                     </select>
                 </li>
             </ul>
-        </div>
+        </ul>
     </header>
 
     <main>
