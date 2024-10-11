@@ -714,7 +714,6 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
         margin-left: 0px;
         min-width: 0px;
         max-width: 80%;
-        padding: none;
     }
 
     #studi p, #studi a {
