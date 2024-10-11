@@ -80,7 +80,15 @@ header {
     background-color: darkblue;
 }
 
-.hamb-button{
+#newsletter-container-menu{
+    display: none;
+}
+
+.center-container .apri-hamb{
+    display: none;
+}
+
+.center-container .chiudi-hamb{
     display: none;
 }
 
@@ -804,4 +812,94 @@ form input:not(:placeholder-shown), form textarea:not(:placeholder-shown) {
         height: 60vh;
     }
 
+    #newsletter-container-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    #newsletter-container{
+        display: none;
+    }
+
+    header #promo, header .right-container{
+        width: 20%;
+    }
+
+    .center-container{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        top:100%;
+        left: 0px;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 9999;
+        /* height: 70vh; */
+        height: 0vh;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    header, header *{
+        overflow: visible;
+    }
+
+    header .right-container{
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .menu li {
+        width: 100%;
+        background-color: var(--primary-color); /* Assicurati che ogni li abbia il colore di sfondo */
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    .menu li a {
+        background-color: inherit; /* Eredita il colore dal li */
+        width: 100%;
+        transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .menu li a:hover {
+        color: white;
+        background-color: var(--hover-color);
+    }
+
+    #newsletter-menu{
+        background-color: blue;
+        color: white;
+        border-bottom: 4px solid darkblue;
+    }
+
+    .center-container .apri-hamb{
+        display: flex;
+        align-items: center;
+    }
+
+    #center-container:target .apri-hamb{
+        display: none;
+    }
+
+    #center-container:target .chiudi-hamb{
+        display: flex;
+        align-items: center;
+    }
+
+    #center-container:target .menu{
+        height: 70vh;
+    }
 }
