@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingegnere Riccardo Mancinelli</title>
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/index3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -12,48 +12,34 @@
 </head>
 <body>
     <header>
-        <div>
-            <ul>
-                <li><a href="#promo" title="vai al video promo"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a></li>
+        <a href="#promo" title="vai al video promo" class="home-img"><img src="resources/img/logo-bg.png" alt="Logo Ingegnere Riccardo Mancinelli" id="header-img"></a>
+        <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
+        <div class="center-container" id="center-container">
+            <a href="#center-container" class="apri-hamb">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+            <a href="#menu" class="chiudi-hamb">
+                <i class="fa-solid fa-x fa-2x"></i>
+            </a>
+            <ul class="menu" id="menu">
                 <li class="no-drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
                 <li class="no-drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
                 <li class="no-drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
                 <li class="no-drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
                 <li class="no-drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
                 <li class="no-drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
+                <li class="no-drop" id="newsletter-container-menu"><a href="#" title="iscriviti alla mia newsletter" id="newsletter-menu">Iscriviti alla newsletter</a></li>
             </ul>
         </div>
-        <div>
-            <ul>
-                <li id="dropdown-list-tag">
-                    <!-- Input checkbox per controllare il menu -->
-                    <input type="checkbox" id="menu-toggle">
-                    <!-- Etichetta per il checkbox, fungerà da icona hamburger -->
-                    <label for="menu-toggle"><i class="fas fa-bars"></i></label>
-                    <!-- Il menu a tendina -->
-                    <ul id="dropdown-menu">
-                        <li class="drop"><a href="#chi-sono" title="vai alla sezione personale">About</a></li>
-                        <li class="drop"><a href="#studi" title="vai alla sezione accademica">Studi</a></li>
-                        <li class="drop"><a href="#esperienze" title="vai alla sezione sulle esperienze lavorative">Esperienze</a></li>
-                        <li class="drop"><a href="#progetti" title="vai alla sezione sui progetti svolti">Progetti</a></li>
-                        <li class="drop"><a href="#attività" title="vai alla sezione sulle attività avviate o in corso">Attività</a></li>
-                        <li class="drop"><a href="#contatti" title="vai alla sezione contatti">Contatti</a></li>
-                        <li class="drop" id="newsletter-container-drop"><a href="#" title="iscriviti alla mia newsletter" id="newsletter-drop">Iscriviti alla newsletter</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
-                <li>
-                    <select id="language" name="language">
-                        <option value="it" selected>ita</option>
-                        <option value="en">eng</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
+        <ul class="right-container">
+            <li class="no-drop" id="newsletter-container"><a href="#" title="iscriviti alla mia newsletter" id="newsletter">Iscriviti alla newsletter</a></li>
+            <li>
+                <select id="language" name="language">
+                    <option value="it" selected>ita</option>
+                    <option value="en">eng</option>
+                </select>
+            </li>
+        </ul>
     </header>
 
     <main>
@@ -74,7 +60,12 @@
         <section id="studi">
             <div>
                 <h1>Percorso Accademico</h1>
-                <p>Ho conseguito un diploma tecnico nel settore meccanico e una laurea magistrale in ingegneria meccatronica, ottenendo il massimo dei voti.</p>
+                <p>
+                    Ho ottenuto un diploma di istituto tecnico nel settore meccanica e meccatronica e successivamente ho
+                    conseguito una laurea triennale in ingegneria meccatronica.
+                    Infine ho proseguito il mio percorso formativo con una laurea magistrale sempre in ingegneria meccatronica.
+                    Tutti i certificati sono stati ottenuti con il massimo dei voti.
+                </p>
                 <a href="#" title="vedi le informazioni riguardanti il mio percorso di studi">Guarda i miei studi</a>
             </div>
         </section>
@@ -151,7 +142,11 @@
                     <img src="resources/img/cherry-logo-removebg.png" alt="Logo CherryBytes">
                 </div>
                 <div class="content">
-                    <p>CherryBytes sviluppa strumentazioni di test modulari e flessibili per il settore Automotive.</p>
+                    <p>
+                        CherryBytes nasce dall'idea di portare sul mercato europeo strumentazioni di test 
+                        all'avanguardia che si distinguono dai competitors per la loro modularità e flessibilità
+                        di utilizzo, strizzando l'occhio soprattutto al settore Automotive.
+                    </p>
                     <a href="https://www.cherrybytes.it/" title="vai al sito di CherryBytes">Vai al sito</a>
                 </div>
             </div>
@@ -160,7 +155,11 @@
                     <img src="resources/img/maghreb-logo.png" alt="Logo Maghreb Cosmetics">
                 </div>
                 <div class="content">
-                    <p>Maghreb Cosmetics nasce dalla passione per i prodotti di cura personale marocchini, portandoli in Italia e in Europa.</p>
+                    <p>
+                        Maghreb-cosmetics esiste grazie alla passione mia e di mia moglie verso il mondo magrebino, 
+                        e dalla nostra intraprendenza nel portare i prodotti di cura personale Marocchini prima in 
+                        Italia e successivamente anche in Europa.
+                    </p>
                     <a href="#" title="vai al sito di Maghreb Cosmetics">Vai al sito</a>
                 </div>
             </div>
@@ -213,45 +212,6 @@
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-        
-    <script>
-        window.onload = function() {
-            const pic = document.getElementById('pic');
-            const raspberry = document.getElementById('raspberry');
-            const cv = document.getElementById('cv');
-            const robotstudio = document.getElementById('robotstudio');
-            const webdev = document.getElementById('webdev');
-            const progetti = document.getElementById('progetti');
-            const mediaQuery = window.matchMedia("(max-width: 1100px), (min-resolution: 2dppx)");
-
-
-            if (!mediaQuery.matches){
-                pic.addEventListener('mouseover', () => {
-                    progetti.style.gridTemplateColumns = '4fr 1fr 1fr 1fr 1fr';
-                });
-
-                raspberry.addEventListener('mouseover', () => {
-                    progetti.style.gridTemplateColumns = '1fr 4fr 1fr 1fr 1fr';
-                });
-
-                cv.addEventListener('mouseover', () => {
-                    progetti.style.gridTemplateColumns = '1fr 1fr 4fr 1fr 1fr';
-                });
-
-                robotstudio.addEventListener('mouseover', () => {
-                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 4fr 1fr';
-                });
-
-                webdev.addEventListener('mouseover', () => {
-                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 4fr';
-                });
-
-                progetti.addEventListener('mouseleave', () => {
-                    progetti.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr';
-                });
-            };
-        };
-    </script>
 </body>
 </html>
         
